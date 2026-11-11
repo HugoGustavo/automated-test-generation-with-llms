@@ -1,0 +1,163 @@
+@InProceedings{10.1007/978-981-96-6403-0_9,
+author="Chen, Gang
+and Liu, Xinyi
+and Chen, Bin
+and Li, Zeke
+and Fan, Haiwei
+and Cao, Peng
+and Wen, Guangqi",
+editor="Huang, Letian",
+title="An Efficient Fine-Tuning Strategy of Large Language Models for Unit Test Code Generation via Multi-Task Prompt Learning",
+booktitle="Machine Learning and Soft Computing",
+year="2025",
+publisher="Springer Nature Singapore",
+address="Singapore",
+pages="99--110",
+abstract="Data-driven automated generation of unit test code faces challenges of low coverage and poor readability, struggling to meet the increasing demand for testing. Recently, Large Language Models (LLMs) have shown great potential in code generation tasks. However, LLMs still face the issues of catastrophic forgetting and limited resources. To address these problems, this work proposes an efficient fine-tuning training method for LLMs for generating unit test codes via a multi-task prompt learning scheme. We design a source mask prompt to guide the model in learning the critical patterns for code generation. To fully leverage the cross-domain relationships, we initialize a target mask prompt by transferring the source mask prompt to the target domain. We effectively use cross-domain mapping attention to interpolate the previously isolated source unified prompts to derive Target instance-level prompts, ensuring better adapting pre-trained multi-task knowledge to downstream code generation tasks with limited resources. Experimental results indicate that our method outperforms other methods on the public SF110 Corpus of Classes dataset. Compared to the state-of-the-art code generation model DeepSeek-Coder, our method achieves improvements of 15.5{\%}, 16.8{\%}, and 14.4{\%} in the evaluation metrics of compilation rate, branch coverage, and line coverage, respectively.",
+isbn="978-981-96-6403-0"
+}
+
+@InProceedings{10.1007/978-3-032-07244-3_22,
+author="Shrestha, Abhishek
+and Schlingloff, Bernd-Holger
+and Gro{\ss}mann, J{\"u}rgen",
+editor="Al-Mamory, Safaa O.
+and Sagheer, Ali Makki
+and Jamil, Abeer Salim
+and Mahmoud, Mahmoud Shuker
+and Abbas, Haider Hadi
+and Sha, Kewei
+and Oreku, George S.",
+title="LESS is More: Guiding LLMs for Formal Requirement and Test Case Generation",
+booktitle="Cybersecurity and Artificial Intelligence Strategies",
+year="2026",
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="366--383",
+abstract="Large Language Models (LLMs) demonstrate impressive in-context reasoning capabilities; however, generating structured outputs remains challenging. In this paper, we investigate prompt-based techniques to guide LLMs in producing outputs compliant with a pre-existing domain-specific controlled natural language called Language for Embedded Safety and Security (LESS). Additionally, we evaluate the effectiveness of LLMs in automating test case generation. Our results show that structured prompt engineering significantly enhances the accuracy and consistency of generated requirements, and that using controlled language formats such as LESS as an intermediate representation substantially improves test case generation accuracy.",
+isbn="978-3-032-07244-3"
+}
+
+@InProceedings{10.1007/978-3-032-10486-1_15,
+author="Lenke, David
+and Ferrer, Javier
+and Chicano, Francisco",
+editor="Mart{\'i}nez, Luis
+and Camacho, David
+and Yin, Hujun
+and Dutta, Bapi
+and Yera, Raciel
+and Rodr{\'i}guez Dom{\'i}nguez, Rosa M.
+and Tall{\'o}n-Ballesteros, Antonio",
+title="Influence of External Dependency Retrieval and Prompt Engineering in Test Case Generation Using LLMs",
+booktitle="Intelligent Data Engineering and Automated Learning -- IDEAL 2025",
+year="2026",
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="150--162",
+abstract="The recent rise of large language models (LLMs) has enabled the generation of higher-quality test cases by leveraging the semantics of the methods under test. However, existing LLM-based approaches still struggle to achieve high coverage levels. To mitigate this issue, we present two complementary techniques in this work: Prompt Engineering and External Dependency Retrieval for context enrichment. We evaluated our improvements through an ablation study on three open-source and four proprietary projects, encompassing 261 distinct methods. For each method, we generated test suites under four implementations and performed ten independent runs, yielding a total of 10,440 executions. Our combined approach yields an average coverage increase of 12{\%} on industrial software, with statistically significant gains over all other variants studied in this paper. Although our enhancements increase the context (the number of input tokens rises by 66.3{\%}), this is partially compensated by a reduction in output tokens due to fewer repair attempts, so that the overall cost overhead remains moderate at about 16{\%}. As future work, we aim to identify the minimal necessary context that still yields significant improvements in test coverage, which could help to further reduce costs.",
+isbn="978-3-032-10486-1"
+}
+
+@InProceedings{10.1007/978-3-032-05188-2_16,
+author="Cuze, Matej
+and Wotawa, Franz",
+editor="Bonfanti, Silvia
+and Papadopoulos, George Angelos",
+title="On the Evaluation of Test Suites Generated by Large Language Models",
+booktitle="Testing Software and Systems",
+year="2026",
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="248--263",
+abstract="Automating test suite generation requires knowledge about the system and the underlying test case generation approach. Querying a smart Chatbot like ChatGPT using the program under test for obtaining test cases is an appealing alternative for reducing costs and effort. However, the quality of the obtained test suite in terms of code coverage or mutation score might be questionable. Hence, an experimental evaluation focusing on the quality metrics of resulting test suites is important. In this paper, we provide such an experimental evaluation considering 12 Python programs and five different Large Language Models, including ChatGPT4o. We measure the statement and branch coverage and the mutation score of the resulting test suite. Furthermore, we vary the temperature used by a Large Language Model and the prompting strategy. Besides reporting on the corresponding research questions, we also provide a comparison with already published similar studies.",
+isbn="978-3-032-05188-2"
+}
+
+@InProceedings{10.1007/978-981-95-4990-0_9,
+author="Zhang, Xuan
+and Zhang, Peng
+and Liu, Qin
+and Zhao, Fengshan",
+editor="Tang, Xijin
+and Xia, Haoxiang
+and Huynh, Van Nam
+and Li, Xianneng",
+title="LLMTest: Combining Symbolic Execution and LLM Capabilities for Commutativity Test of Reduce Functions",
+booktitle="Knowledge and Systems Sciences",
+year="2026",
+publisher="Springer Nature Singapore",
+address="Singapore",
+pages="118--132",
+abstract="Ensuring the correctness of reducers is critical in distributed systems, as their non-commutative nature can lead to order-sensitive and non-deterministic behavior. This issue becomes particularly challenging in large-scale data processing frameworks like MapReduce, where the unordered nature of input data can exacerbate correctness risks. Existing approaches, such as static analysis or heuristic-based testing, often fail to distinguish between harmless and problematic reducers, leading to excessive false positives that burden developers. To address this, we introduce a novel framework that combines the semantic reasoning capabilities of Large Language Models (LLMs) with the systematic path exploration of symbolic execution. By standardizing the reduce function under test, our framework ensures a consistent representation for analysis. Symbolic execution complements this by systematically generating diverse inputs that maximize path coverage, while LLMs refine these inputs into meaningful test cases by incorporating data properties extracted from requirements. This synergy enables the precise identification of genuine correctness issues, addressing the limitations of existing methods. Experimental results demonstrate that our approach, termed LLMTest, achieves an accuracy of 79.47{\%} and a recall of 89.58{\%}, while significantly reducing the false positive rate to 30.85{\%}. In comparison, traditional methods such as DirectTest (symbolic execution only) have a lower accuracy of 63.16{\%} and a much higher false positive rate of 55.32{\%} (RandTest) or 65.96{\%} (CT[x]). This integration not only enhances the reliability of distributed systems, but also provides developers with actionable insights by minimizing unnecessary warnings. Beyond MapReduce, the framework has potential applications in other data-intensive scientific workflows and AI-driven systems where order-sensitivity or data property preservation is critical.",
+isbn="978-981-95-4990-0"
+}
+
+@InProceedings{10.1007/978-981-95-6032-5_5,
+author="Guo, Xiujing
+and Tsuchiya, Tatsuhiro",
+editor="Chen, Yuting
+and Okamura, Hiroyuki
+and Liu, Shaoying",
+title="Diagnosing and Repairing Field Access Hallucinations in LLM-Based Test Generation",
+booktitle="Software Fault Prevention, Verification, and Validation",
+year="2026",
+publisher="Springer Nature Singapore",
+address="Singapore",
+pages="59--77",
+abstract="Large language models (LLMs) are increasingly used to generate unit tests directly from source code. However, their generated test cases often fail due to hallucinated references to non-existent class fields, a phenomenon we term Field Access Hallucination (FAH). Despite its frequency and impact on test executability, FAH has not been systematically studied in prior work. This paper presents the first framework that uses static guidance to diagnose and correct FAH in LLM-generated test code. We begin by analyzing the prevalence and patterns of FAH errors under minimal prompt settings, revealing that they account for a substantial proportion of test failures. To mitigate FAH, we propose a repair pipeline that combines static analysis, hallucination detection, and prompt rewriting. Our approach statically analyzes attribute access paths in the target function and selectively injects only the necessary field initialization logic into the prompt, improving test reliability without overwhelming the LLM with irrelevant context. We evaluate our method on seven real-world Python modules spanning multiple projects. Experimental results show that our approach increases test execution success rates compared to naive prompting and outperforms full-context prompting strategies in mitigating FAH. Furthermore, our method maintains prompt conciseness while achieving targeted error reduction. These findings suggest that addressing FAH is essential for practical and scalable LLM-based test generation, and that static guidance offers an effective path forward.",
+isbn="978-981-95-6032-5"
+}
+
+@InProceedings{10.1007/978-3-032-07995-4_18,
+author="Karmouda, Ouafae
+and Ghaouat, Maroua
+and Feuilloley, Guillaume",
+editor="Arai, Kohei",
+title="Automated Test Case Generation from Natural Language Requirements Using Large Language Models",
+booktitle="Proceedings of the Future Technologies Conference (FTC) 2025, Volume 3",
+year="2026",
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="260--281",
+abstract="Test case generation is a critical aspect of software testing that ensures software systems function correctly under various conditions. As software complexity increases, traditional manual test case creation becomes inefficient, necessitating automated approaches. This study investigates the potential of Large Language Models (LLMs), specifically Claude 3.5 Sonnet, in automating the extraction of conditional statements from natural language (NL) functional requirements---a fundamental step in automated test case derivation. Prompt Engineering techniques are evaluated, including zero-shot, few-shot, and chain-of-thought prompting, for extracting antecedents and consequents, assessing performance using a weighted similarity metric that integrates BERT-Score, BLEU, and ROUGE. Experiments on the PURE dataset show that few-shot prompting achieves the best F1 score, balancing accuracy and efficiency. Beyond performance evaluation, we examine generalizability across requirement types, comparison with manual annotations, and computational trade-offs. We also identify key challenges, including handling unmarked conditionals and complex logical structures. These findings highlight both the potential and limitations of LLMs in test case automation, offering deeper insights into their role in software engineering workflows.",
+isbn="978-3-032-07995-4"
+}
+
+@InProceedings{10.1007/978-3-032-08649-5_17,
+author="Kosna, Srinivas Reddy",
+editor="Rahimi, Nick
+and Margapuri, Venkat
+and Golilarz, Noor Amiri",
+title="Prompt Driven Test Generation: Leveraging Large Language Models and Knowledge Graphs for Quality Assurance in Data Intensive Software System",
+booktitle="Software and Data Engineering",
+year="2026",
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="267--288",
+abstract="Quality assurance in data-intensive software systems is challenging due to complex code-data interactions and diverse data scenarios. Traditional testing methods often fail to address these issues, particularly for edge cases and domain-specific constraints. We propose Prompt-Driven Test Generation (PDTG), a novel framework that integrates large language models (LLMs) and knowledge graphs to automate test case generation. PDTG uses engineered prompts to guide LLMs, enriched by knowledge graphs that provide semantic context and domain constraints. Evaluated on three real-world applications (financial, healthcare, ecommerce), PDTG achieves a 27.3{\%} increase in data scenario coverage, 35.8{\%} better fault detection, and 41.2{\%} less manual effort compared to baselines like EvoSuite and Randoop. This approach enhances test relevance and coverage, offering a scalable solution for testing complex systems, with applications in collaborative intelligence and distributed workflows.",
+isbn="978-3-032-08649-5"
+}
+
+@InProceedings{10.1007/978-3-032-21631-1_22,
+author="Trinh, Thanh-Binh
+and Nguyen, Thi-Van
+and Le, Ngoc-Minh
+and Ha, Nguyen Viet",
+editor="Nguyen, Ngoc Thanh
+and Le, Anh-Cuong
+and Tran, Trong Dao
+and Hong, Tzung-Pei
+and Manolopoulos, Yannis
+and Le Khac, Nhien An
+and Tran Tin, Phu
+and Huynh, Van-Nam",
+title="FSTG: Few-Shot Test Case Generation from Use Case Specifications Using Large Language Models",
+booktitle="Computational Intelligence in Engineering Science",
+year="2026",
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="302--316",
+abstract="Automated test case generation from requirements specifications remains challenging, especially in DevOps workflows where continuous validation demands fast and reliable test creation. This paper proposes FSTG, a few-shot approach for generating test cases from Cockburn-style use cases using large language models. FSTG extracts semantic information from use cases and leverages schema-guided prompting to produce semantically consistent test cases with only a small number of demonstrations. To assess the effectiveness of the generated tests, the proposed approach includes an automated evaluation pipeline for measuring coverage and redundancy. Experiments on 112 use cases from five real-world systems show that FSTG achieves 89.2{\%} transition coverage and detects 31.2 faults on average, showing improvements over both model-based and zero-shot baselines while reducing test generation time. These results indicate that FSTG reduces the gap between informal requirements and automated testing, enabling practical integration of AI-assisted test generation into DevOps workflows.",
+isbn="978-3-032-21631-1"
+}

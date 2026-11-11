@@ -1,0 +1,239 @@
+@INPROCEEDINGS{10554852,
+  author={Xue, Zhiyi and Li, Liangguo and Tian, Senyue and Chen, Xiaohong and Chen, Liangyu and Zhang, Min and Li, Pingping and Jiang, Tingting},
+  booktitle={2024 IEEE/ACM 46th International Conference on Software Engineering: Companion Proceedings (ICSE-Companion)}, 
+  title={Domain Knowledge is All You Need: A Field Deployment of LLM-Powered Test Case Generation in FinTech Domain}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={314-315},
+  abstract={Despite the promise of automation, general-purpose Large Language Models (LLMs) face difficulties in generating complete and accurate test cases from informal software requirements, primarily due to challenges in interpreting unstructured text and producing diverse, relevant scenarios. This paper argues that incorporating domain knowledge significantly improves LLM performance in test case generation. We report on the successful deployment of our LLM-powered tool, LLM4Fin, in the FinTech domain, showcasing the crucial role of domain knowledge in addressing the aforementioned challenges. We demonstrate two methods for integrating domain knowledge: implicit incorporation through model fine-tuning, and explicit incorporation with algorithm design. This combined approach delivers remarkable results, achieving up to 98.18% improvement in test scenario coverage and reducing generation time from 20 minutes to 7 seconds.},
+  keywords={Knowledge engineering;Automation;Accuracy;Software algorithms;Software;Faces;Software engineering;Large Language Models;Software Requirements;Test Case Generation;Natural Language},
+  doi={10.1145/3639478.3643087},
+  ISSN={2574-1934},
+  month={April}
+}
+
+@ARTICLE{11506351,
+  author={Ahmad, Azeem and Naeem, Muhammad Rashid},
+  journal={IEEE Access}, 
+  title={Boosting Test Generation in Industrial Codebases: A Comparative Study of Base and Fine-Tuned LLMs}, 
+  year={2026},
+  volume={},
+  number={},
+  pages={1-1},
+  abstract={Large Language Models (LLMs) have demonstrated promising capabilities in automated software engineering tasks, particularly in test case generation. Recently, researchers and practitioners have actively explored using open-source datasets with both open-source and commercial LLMs for generating test cases from source code and related software artifacts. However, the effectiveness of (fine-tuned vs base) open-source LLMs in industrial settings remains under explored. This study investigates the performance of various fine-tuned and base configurations of the DeepSeek-Coder 33B model (i.e., base and instruct) for unit test generation in a large-scale industrial code-base. This study propose a two-loop refinement strategy: Loop 1 generates initial test cases, while Loop 2 refines failed cases based on compilation errors and code coverage feedback. Eight different LLM configurations were evaluated using compilation success rate and line coverage as performance metrics. Our findings reveal that fine-tuned models significantly outperform base models, and the proposed refinement strategy leads to measurable improvements in both test compilation and code coverage. The use of fine-tuned-instruct model in loop 1 and fine-tuned-instruct model in loop 2 yielded the highest line coverage (62.56%) and compilation success. This work demonstrates the value of domain-specific fine-tuning and multi-phase feedback strategies in enhancing LLM-powered software testing pipelines.},
+  keywords={Feedback;Circuits;LoRa;Communication systems;Internet;Radio access networks;Regional area networks;Telecommunications;Computer networks;Radio communication},
+  doi={10.1109/ACCESS.2026.3690571},
+  ISSN={2169-3536},
+  month={}
+}
+
+@INPROCEEDINGS{11499660,
+  author={M, Carol Joanna Bright and P, Kripaa and S, Karishma and I, Freida Judith and Rahman, Usama Abdur},
+  booktitle={2026 International Conference on Innovative Trends in Information Technology (ICITIIT)}, 
+  title={Improving Software Testing with RAG-Based LLMs and Supporting Indian Regional Languages}, 
+  year={2026},
+  volume={},
+  number={},
+  pages={1-6},
+  abstract={Automated generation of software test cases are one of the crucial tasks in modern software engineering, while the traditional method of manually writing test cases is time-consuming, prone to making errors and often fails to achieve contextual or linguistic accuracy. This paper proposes a Retrieval-Augmented Generation based method, which integrates dynamic knowledge retrieval with LLMs to generate highly faithful and contextually grounded test cases. Unlike general fine-tuned LLMs, which require extensive retraining, the proposed RAG pipeline uses lanceDB to store domain related knowledge and SentenceTransformers to semantically retrieve knowledge from the database, thus offering more reliability with much lower computational cost. Besides this, the suggested pipeline allows multilingual test case generation done by the LLM model across English and other Indian regional languages like Hindi, Tamil, Telugu, Malayalam and Kannada making software test more inclusive for language sensitive software ecosystems. The generated test cases are observed to be semantically aligned with the retrieved context and real-world user stories thus improving factual consistency and software reliability. Experimental evaluation shows consistent faithfulness scores, showing the effectiveness of the RAG pipeline and LLMs generation. Results confirm the embeddings quality, retrieval accuracy and reasoning capability within the model. Also, the architecture can be optionally extended for user feedback-based continual learning by integrating it with QA platforms such as Jira via Model Context Protocol (MCP) which gives the possibility to modify the model as per the project requirements. Overall, this study shows that RAG based models could provide scalable, multilingual and intelligent automation in future software quality assurance.},
+  keywords={Feeds;Feedback;Circuits;Protocols;Communication systems;HTTP;Internet;Telecommunications;Videos;Computer networks;Retrieval Augmented Generation;Large Language Models;Software Test Case Generation;Multilingual NLP;Information Retrieval;Vector Database},
+  doi={10.1109/ICITIIT68860.2026.11499660},
+  ISSN={},
+  month={March}
+}
+
+@INPROCEEDINGS{11259411,
+  author={Long, Jianlin and Qin, Renchao and Jiang, Zujun and Duan, Jialin and Li, Suonan and Qu, Xiaosheng},
+  booktitle={2025 18th International Congress on Image and Signal Processing, BioMedical Engineering and Informatics (CISP-BMEI)}, 
+  title={A Python Unit Test Generation Method Based on Fine-Tuned Language Models and Coverage}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-6},
+  abstract={Unit testing is fundamental for software reliability, yet manual test construction is inefficient and often results in limited coverage. Existing automated tools struggle with complex structures, while general-purpose large language models (LLMs) lack domain adaptability and fine-grained coverage control. To address this, we propose a domain adaptive finetuning approach based on the DeepSeek-R1-Distill-Qwen-7B (DeepSeek-7B) model. Using a high quality function-test dataset, the model is fine-tuned with structured prompts that encode abstract syntax tree (AST) execution paths, and a Coverage.py-based feedback mechanism iteratively fills uncovered regions to improve controllability. Experiments on seven open-source projects show substantial gains in line coverage, branch coverage, and mutation score, especially in Spark and Django. Compared with the base model, our method achieves over 20% higher coverage and outperforms Pynguin. Ablation studies confirm the combined effectiveness of structured prompts and coverage feedback, enabling up to 88.6% line coverage, 83.3% branch coverage, and a mutation score of 78.9%.},
+  keywords={Adaptation models;Trees (botanical);Syntactics;Data models;Dynamic programming;Software reliability;Iterative methods;Test pattern generators;Sparks;Python;unit test;llMs;fine-tuning;coverage},
+  doi={10.1109/CISP-BMEI68103.2025.11259411},
+  ISSN={},
+  month={Oct}
+}
+
+@INPROCEEDINGS{11290782,
+  author={Ananda Ratmayanti, Putu Vidya and Sulistiyo Kusumo, Dana and Riskiana, Rosa Reska},
+  booktitle={2025 3rd International Conference on Software Engineering and Information Technology (ICoSEIT)}, 
+  title={Improving Requirement Comprehension in GPT Models for Enhanced Consistency in Test Case Generation}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-6},
+  abstract={Test case generation is an essential component in the software testing lifecycle. Despite its importance, generating test cases automatically using Large Language Models such as GPT remains a challenging task. One of the most persistent issues observed is the inconsistency of generated outputs in terms of format, structure, and quantity, even when the input requirements are highly similar. Such inconsistencies reduce reliability, increase the need for human intervention, and limit the applicability of LLMs in real-world Quality Assurance practices. To address this limitation, this paper introduces a method aimed at enhancing the consistency of generated test cases by improving the model’s comprehension of requirements through a continual domain-adaptive pretraining approach. In this method, the GPT model is continually trained on functional requirements collected from a hospital management system, which are preprocessed using Natural Language Processing techniques to minimize ambiguity, normalize linguistic variations, and capture domain-specific patterns that reinforce contextual understanding. The performance of the pretrained model is then systematically compared with the baseline ChatGPT model using three evaluation metrics. Experimental results demonstrate that the proposed model achieves 100% requirement coverage, records a significantly higher Jaccard similarity score of 0.78, and consistently generates executable test cases with a stable structure that aligns with best practices in software testing. These findings highlight the effectiveness of continual pretraining in improving requirement comprehension, reducing variability in generated outputs, and ultimately contributing to the development of more reliable, consistent, and scalable automated software testing workflows.},
+  keywords={Software testing;Runtime;Hospitals;Large language models;Software quality;Reliability engineering;Software reliability;Selenium;Information systems;Context modeling;test case generation;continual pretraining;NLP;jaccard similarity;hospital information system;software testing automation;selenium testing},
+  doi={10.1109/ICoSEIT67010.2025.11290782},
+  ISSN={},
+  month={Oct}
+}
+
+@INPROCEEDINGS{10628480,
+  author={Arora, Chetan and Herda, Tomas and Homm, Verena},
+  booktitle={2024 IEEE 32nd International Requirements Engineering Conference (RE)}, 
+  title={Generating Test Scenarios from NL Requirements Using Retrieval-Augmented LLMs: An Industrial Study}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={240-251},
+  abstract={Test scenarios are specific instances of test cases that describe a sequence of actions to validate a particular software functionality. By outlining the conditions under which the software operates and the expected outcomes, test scenarios ensure that the software functionality is tested in an integrated manner. Test scenarios are crucial for systematically testing an application under various conditions, including edge cases, to identify potential issues and guarantee overall performance and reliability. Manually specifying test scenarios is tedious and requires a deep understanding of software functionality and the underlying domain. It further demands substantial effort and investment from already time- and budget-constrained requirements engineers and testing teams. This paper presents an automated approach (RAGTAG) for test scenario generation using Retrieval-Augmented Generation (RAG) with Large Language Models (LLMs). RAG allows the integration of specific domain knowledge with LLMs' generation capabilities. We evaluate RAGTAG on two industrial projects from Austrian Post with bilingual requirements in German and English. Our results from an interview survey conducted with four experts on five dimensions – relevance, coverage, correctness, coherence and feasibility, affirm the potential of RAGTAG in automating test scenario generation. Specifically, our results indicate that, despite the difficult task of analyzing bilingual requirements, RAGTAG is able to produce scenarios that are well-aligned with the underlying requirements and provide coverage of different aspects of the intended functionality. The generated scenarios are easily understandable to experts and feasible for testing in the project environment. The overall correctness is deemed satisfactory; however, gaps in capturing exact action sequences and domain nuances remain, underscoring the need for domain expertise when applying LLMs.},
+  keywords={Surveys;Large language models;Coherence;Software systems;Software reliability;Scenario generation;Requirements engineering;Requirements Engineering;Requirements-driven Testing;Test Scenarios;Large Language Models (LLMs);Industry Study},
+  doi={10.1109/RE59067.2024.00031},
+  ISSN={2332-6441},
+  month={June}
+}
+
+@INPROCEEDINGS{11173474,
+  author={Wang, Zhiyao and Guo, Xiujing and Tsuchiya, Tatsuhiro},
+  booktitle={2025 25th International Conference on Software Quality, Reliability and Security (QRS)}, 
+  title={Retrieval-Augmented Generation for Software Requirement-Based Test Case Generation}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={108-119},
+  abstract={Testers often need to manually write black-box test cases based on software artifacts such as requirement documents. In agile development, this process is often time-consuming and is further complicated by frequent requirement changes, leading to continuous maintenance overhead. Automating this process is therefore essential. Given the strong natural language understanding and generation capabilities of large language models (LLMs), combined with Retrieval-Augmented Generation (RAG), we propose a RAG-based framework for automated test case generation. Before generation, we embed software artifacts to construct a vectorbased knowledge database. At runtime, software requirements are used as queries to retrieve relevant context, which is integrated into a prompt and passed to the LLM for test case generation. This approach addresses several shortcomings of LLMs, including limited context length, attention dilution over large inputs, and the tendency to hallucinate or over-look key domain-specific constraints. By providing query-specific external knowledge, RAG enhances both accuracy and efficiency. We deploy the framework with different models locally and conduct experiments on two open-source datasets. Compared with the manually written benchmark test cases, our method achieves full requirement coverage with fewer test cases, improved efficiency, reduced error potential, and realized better readability.},
+  keywords={Runtime;Databases;Large language models;Retrieval augmented generation;Closed box;Software quality;Natural language processing;Software reliability;Maintenance;Security;Test Case Generation;Retrieval-Augmented Generation;Large Language Model;Software Requirement},
+  doi={10.1109/QRS65678.2025.00022},
+  ISSN={2693-9177},
+  month={July}
+}
+
+@INPROCEEDINGS{11395683,
+  author={Hariharan, Mohanakrishnan},
+  booktitle={2026 IEEE 5th International Conference on AI in Cybersecurity (ICAIC)}, 
+  title={Reinforcement Learning Integrated Agentic RAG for Software Test Cases Authoring}, 
+  year={2026},
+  volume={},
+  number={},
+  pages={1-5},
+  abstract={This paper introduces a framework that integrates reinforcement learning (RL) with autonomous agents to enable continuous improvement in the automated process of software test cases authoring from business requirement documents within Quality Engineering (QE) workflows. Conventional systems employing Large Language Models (LLMs) generate test cases from static knowledge bases, which fundamentally limits their capacity to enhance performance over time. Our proposed Reinforcement Infused Agentic RAG (Retrieve, Augment, Generate) framework overcomes this limitation by employing AI agents that learn from QE feedback, assessments, and defect discovery outcomes to automatically improve their test case generation strategies. The system combines specialized agents with a hybrid vector-graph knowledge base that stores and retrieves software testing knowledge. Through advanced RL algorithms, specifically Proximal Policy Optimization (PPO) and Deep Q-Networks (DQN), these agents optimize their behavior based on QE-reported test effectiveness, defect detection rates, and workflow metrics. As QEs execute AI-generated test cases and provide feedback, the system learns from this expert guidance to improve future iterations. Experimental validation on enterprise Apple projects yielded substantive improvements: a 2.4% increase in test generation accuracy (from 94.8% to 97.2%), and a 10.8% improvement in defect detection rates. The framework establishes a continuous knowledge refinement loop driven by QE expertise, resulting in progressively superior test case quality that enhances, rather than replaces, human testing capabilities.},
+  keywords={Software testing;Automation;Accuracy;Knowledge based systems;Software algorithms;Reinforcement learning;System software;Test pattern generators;Defect detection;Multi-agent systems;Reinforcement Learning;Agentic Systems;Software Testing;Retrieval-Augmented Generation;Multi-Agent Systems;Continuous Learning;RAG},
+  doi={10.1109/ICAIC67076.2026.11395683},
+  ISSN={},
+  month={Feb}
+}
+
+@ARTICLE{10949862,
+  author={Li, Hongyan and Sun, Weifeng and Yan, Meng and Xu, Ling and Li, Qiang and Zhang, Xiaohong and Zhang, Hongyu},
+  journal={IEEE Transactions on Software Engineering}, 
+  title={Retrieval-Augmented Fine-Tuning for Improving Retrieve-and-Edit Based Assertion Generation}, 
+  year={2025},
+  volume={51},
+  number={5},
+  pages={1591-1614},
+  abstract={Unit Testing is crucial in software development and maintenance, aiming to verify that the implemented functionality is consistent with the expected functionality. A unit test is composed of two parts: a test prefix, which drives the unit under test to a particular state, and a test assertion, which determines what the expected behavior is under that state. To reduce the effort of conducting unit tests manually, Yu et al. proposed an integrated approach (integration for short), combining information retrieval with a deep learning-based approach to generate assertions for test prefixes, and obtained promising results. In our previous work, we found that the overall performance of integration is mainly due to its success in retrieving assertions. Moreover, integration is limited to specific types of edit operations and struggles to understand the semantic differences between the retrieved focal-test (focal-test includes a test prefix and a unit under test) and the input focal-test. Based on these insights, we then proposed a retrieve-and-edit approach named EditAS to learn the assertion edit patterns to improve the effectiveness of assertion generation in our prior study. Despite being promising, we find that the effectiveness of EditAS can be further improved. Our analysis shows that: ① The editing ability of EditAS still has ample room for improvement. Its performance degrades as the edit distance between the retrieval assertion and ground truth increases. Specifically, the average accuracy of EditAS is $12.38\%$12.38% when the edit distance is greater than 5. ② EditAS lacks a fine-grained semantic understanding of both the retrieved focal-test and the input focal-test themselves, which leads to many inaccurate token modifications. In particular, an average of 25.57% of the incorrectly generated assertions that need to be modified are not modified, and an average of 6.45% of the assertions that match the ground truth are still modified. Thanks to pre-trained models employing pre-training paradigms on large-scale data, they tend to have good semantic comprehension and code generation abilities. In light of this, we propose $EditAS^{2}$EditAS2, which improves retrieval-and-edit based assertion generation through retrieval-augmented fine-tuning. Specifically, $EditAS^{2}$EditAS2 first retrieves a similar focal-test from a predefined corpus and treats its assertion as a prototype. Then, $EditAS^{2}$EditAS2 uses a pre-trained model, CodeT5, to learn the semantics of the input and similar focal-tests as well as assertion editing patterns to automatically edit the prototype. We first evaluate the $EditAS^{2}$EditAS2 for its inference performance on two large-scale datasets, and the experimental results show that $EditAS^{2}$EditAS2 outperforms state-of-the-art assertion generation methods and pre-trained models, with average performance improvements of 15.93%-129.19% and 11.01%-68.88% in accuracy and CodeBLEU, respectively. We also evaluate the performance of $EditAS^{2}$EditAS2 in detecting real-world bugs from Defects4J. The experimental results indicate that $EditAS^{2}$EditAS2 achieves the best bug detection performance among all the methods.},
+  keywords={Semantics;Prototypes;Testing;Computer bugs;Training;Test pattern generators;Measurement;Accuracy;Sun;Software development management;Unit testing;assertion generation;test assertion;pre-trained model;fine-tuning},
+  doi={10.1109/TSE.2025.3558403},
+  ISSN={1939-3520},
+  month={May}
+}
+
+@ARTICLE{10904092,
+  author={Zhang, Quanjun and Fang, Chunrong and Zheng, Yi and Qian, Ruixiang and Yu, Shengcheng and Zhao, Yuan and Zhou, Jianyi and Yang, Yun and Zheng, Tao and Chen, Zhenyu},
+  journal={IEEE Transactions on Software Engineering}, 
+  title={Improving Retrieval-Augmented Deep Assertion Generation via Joint Training}, 
+  year={2025},
+  volume={51},
+  number={4},
+  pages={1232-1247},
+  abstract={Unit testing attempts to validate the correctness of basic units of the software system under test and has a crucial role in software development and testing. However, testing experts have to spend a huge amount of effort to write unit test cases manually. Very recent work proposes a retrieve-and-edit approach to automatically generate unit test oracles, i.e., assertions. Despite being promising, it is still far from perfect due to some limitations, such as splitting assertion retrieval and generation into two separate components without benefiting each other. In this paper, we propose AG-RAG, a retrieval-augmented automated assertion generation (AG) approach that leverages external codebases and joint training to address various technical limitations of prior work. Inspired by the plastic surgery hypothesis, AG-RAG attempts to combine relevant unit tests and advanced pre-trained language models (PLMs) with retrieval-augmented fine-tuning. The key insight of AG-RAG is to simultaneously optimize the retriever and the generator as a whole pipeline with a joint training strategy, enabling them to learn from each other. Particularly, AG-RAG builds a dense retriever to 1_search for relevant test-assert pairs (TAPs) with semantic matching and a retrieval-augmented generator to synthesize accurate assertions with the focal-test and retrieved TAPs as input. Besides, AG-RAG leverages a code-aware language model CodeT5 as the cornerstone to facilitate both assertion retrieval and generation tasks. Furthermore, AG-RAG designs a joint training strategy that allows the retriever to learn from the feedback provided by the generator. This unified design fully adapts both components specifically for retrieving more useful TAPs, thereby generating accurate assertions. AG-RAG is a generic framework that can be adapted to various off-the-shelf PLMs. We extensively evaluate AG-RAG against six state-of-the-art AG approaches on two benchmarks and three metrics. Experimental results show that AG-RAG significantly outperforms previous AG approaches on all benchmarks and metrics, e.g., improving the most recent baseline EditAS by 20.82% and 26.98% in terms of accuracy. AG-RAG also correctly generates 1739 and 2866 unique assertions that all baselines fail to generate, 3.45X and 9.20X more than EditAS. We further demonstrate the positive contribution of our joint training strategy, e.g., AG-RAG improving a variant without the retriever by an average accuracy of 14.11%. Besides, adopting other PLMs can provide substantial advancement, e.g., AG-RAG with four different PLMs improving EditAS by an average accuracy of 9.02%, highlighting the generalizability of our framework. Overall, our work demonstrates the promising potential of jointly fine-tuning the PLM-based retriever and generator to predict accurate assertions by incorporating external knowledge sources, thereby reducing the manual efforts of unit testing experts in practical scenarios.},
+  keywords={Generators;Training;Codes;Testing;Accuracy;Semantics;Pipelines;Test pattern generators;Surgery;Benchmark testing;Unit testing;assertion generation;pre-trained language models;AI4SE},
+  doi={10.1109/TSE.2025.3545970},
+  ISSN={1939-3520},
+  month={April}
+}
+
+@INPROCEEDINGS{10172590,
+  author={Nashid, Noor and Sintaha, Mifta and Mesbah, Ali},
+  booktitle={2023 IEEE/ACM 45th International Conference on Software Engineering (ICSE)}, 
+  title={Retrieval-Based Prompt Selection for Code-Related Few-Shot Learning}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={2450-2462},
+  abstract={Large language models trained on massive code corpora can generalize to new tasks without the need for task-specific fine-tuning. In few-shot learning, these models take as input a prompt, composed of natural language instructions, a few instances of task demonstration, and a query and generate an output. However, the creation of an effective prompt for code-related tasks in few-shot learning has received little attention. We present a technique for prompt creation that automatically retrieves code demonstrations similar to the developer task, based on embedding or frequency analysis. We apply our approach, Cedar, to two different programming languages, statically and dynamically typed, and two different tasks, namely, test assertion generation and program repair. For each task, we compare Cedar with state-of-the-art task-specific and fine-tuned models. The empirical results show that, with only a few relevant code demonstrations, our prompt creation technique is effective in both tasks with an accuracy of 76% and 52% for exact matches in test assertion generation and program repair tasks, respectively. For assertion generation, Cedar outperforms existing task-specific and fine-tuned models by 333% and 11%, respectively. For program repair, Cedar yields 189% better accuracy than task-specific models and is competitive with recent fine-tuned models. These findings have practical implications for practitioners, as Cedar could potentially be applied to multilingual and multitask settings without task or language-specific training with minimal examples and effort.},
+  keywords={Training;Computer languages;Codes;Source coding;Natural languages;Maintenance engineering;Chatbots;Large Language Models;Transformers;Few-shot learning;Program repair;Test assertion generation},
+  doi={10.1109/ICSE48619.2023.00205},
+  ISSN={1558-1225},
+  month={May}
+}
+
+@ARTICLE{11184836,
+  author={Yang, Zhuoying and Wang, Lei},
+  journal={IEEE Access}, 
+  title={IntelliUnitGen: A Unit Test Case Generation Framework Based on the Integration of Static Analysis and Prompt Learning}, 
+  year={2025},
+  volume={13},
+  number={},
+  pages={177760-177784},
+  abstract={Test case generation is a critical research topic in the field of automated software engineering. In recent years, with the rapid advancement of large language models (LLMs) such as the GPT series, LLaMA series, and DeepSeek series, both domestic and international researchers have attempted to leverage prompt learning capabilities of LLMs for automated test case generation and have achieved promising results. However, most existing approaches rely solely on the language model’s ability to respond to natural language prompts, while neglecting systematic analysis of static features within source code. These methods often fail to apply traditional static analysis techniques to extract structural and semantic information from the source code, resulting in incomplete generation, omission of key elements, or semantic misinterpretation. To address these limitations, this paper proposes IntelliUnitGen — an intelligent unit test case generation framework that integrates static analysis with prompt learning. This framework aims to combine the advantages of traditional static analysis techniques with the cutting-edge capabilities of LLMs to enhance the automation level and quality of unit test case generation. IntelliUnitGen synthesizes static code features extracted via static analysis into structured, task-relevant prompts for the language model. It adopts a chain-of-thought prompting strategy to guide the LLM in generating rigorous and comprehensive test cases. The overall workflow of the proposed framework is presented, followed by a detailed introduction to its key techniques and implementation details. An illustrative example is provided to intuitively demonstrate the test case generation process of the framework, and experimental validation is conducted on three open-source projects. Experimental results show that IntelliUnitGen significantly outperforms traditional (non-LLM-based) tools and LLM-only prompt learning approaches in metrics such as coverage, generalizability, and compilability & executability, achieving state-of-the-art (SOTA) performance. This study demonstrates the potential of integrating static code analysis with prompt learning to improve not only unit test case generation but also other source code processing tasks, potentially overcoming existing limitations of LLMs in software engineering applications. This framework demonstrates a practical step forward in addressing long-standing challenges in automated software testing. To facilitate reproducibility and further research, the complete implementation of the IntelliUnitGen framework, alongside the generated test cases and JaCoCo coverage reports for all experimental projects, has been made publicly available at: https://github.com/yangzy0115/IntelliUnitGen},
+  keywords={Static analysis;Codes;Testing;Source coding;Semantics;Test pattern generators;Software engineering;Cognition;Analytical models;Logic;Software engineering;unit test case generation;prompt learning;static analysis;chain-of-thought prompting;source code processing;large language models;automated software engineering},
+  doi={10.1109/ACCESS.2025.3615990},
+  ISSN={2169-3536},
+  month={}
+}
+
+@INPROCEEDINGS{11334404,
+  author={Mizoguchi, Masashi and Yoshimura, Kentaro and Nakazawa, Keita and Sato, Yasuomi and Iida, Takahiro and Narisawa, Fumio},
+  booktitle={2025 40th IEEE/ACM International Conference on Automated Software Engineering (ASE)}, 
+  title={Acceleration of Automotive Software Development by Retrieval Augmented Integration Test Script Generation}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={3772-3777},
+  abstract={Improving the efficiency of software integration testing is a critical challenge in the automotive industry, particularly as Electronic Control Unit (ECU) architectures become increasingly complex. This paper addresses the automation of integration test script generation by leveraging Large Language Models (LLMs) with Retrieval Augmented Generation (RAG). Specifically, we target the phase in which test engineers translate natural language test case specifications into executable scripts for integration test environments containing hardware debug interfaces. To bridge the knowledge gap between LLMs and domain-specific test tool APIs, we construct a task-oriented vector store that incorporates both API manuals and supplemental, workflow-centric information. By combining these with prompts containing code prefixes, our method enables LLMs to generate robust and correct integration test scripts. We evaluated our approach on typical test scenarios reflecting industry practices for multi-core ECUs. While the test cases used were not directly taken from a specific development project, they closely mirror those routinely employed across numerous automotive ECU development initiatives. The proposed method successfully generated executable scripts for all cases and reduced total test execution man-hours by 43% compared to a realistic baseline of manual execution. These results demonstrate the practical benefit of context-enriched LLMs in accelerating specialized software engineering tasks within the automotive domain, and it also identifies remaining challenges in extending automation to broader aspects such as test coverage, maintainability, and seamless process integration.},
+  keywords={Automation;Codes;Large language models;Retrieval augmented generation;Manuals;Life estimation;Software;Vectors;Automotive engineering;Software engineering;automotive software;integration test;large language model;retrieval augmented generation;test script},
+  doi={10.1109/ASE63991.2025.00314},
+  ISSN={2643-1572},
+  month={Nov}
+}
+
+@INPROCEEDINGS{11144230,
+  author={Xia, Min and Tong, Guang},
+  booktitle={2025 10th International Conference on Electronic Technology and Information Science (ICETIS)}, 
+  title={Application and Optimization of Retrieval-Augmented Generation in Automotive Software Test Case Generation}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={469-474},
+  abstract={This study proposes a Retrieval-Augmented Generation (RAG) based Test Case Generation Framework integrated with Multi-Strategy Routing, enabling intelligent adaptation from rapid prototyping to rigorous verification through a Three-Tier Strategy Network. A progressive three-level test case generation strategy system is introduced, consisting of Basic One-Time Generation (Strategy A), Comprehensive Requirement Coverage Verification (Strategy B), and Compatibility Incremental Enhancement (Strategy C). By constructing a Dynamic Strategy Routing Network, intelligent matching between requirement complexity and generation strategies is achieved. Experimental results demonstrate that the three strategies exhibit effective complementarity in key metrics such as requirement coverage rate ($93.7 \%$ vs. $62.3 \%$) and generation efficiency (33.2s vs. 55.6s), providing optimal solutions across different testing stages.},
+  keywords={Measurement;Information science;Retrieval augmented generation;Routing;Rapid prototyping;Software;Vehicle dynamics;Optimization;Testing;Smart manufacturing;Retrieval-Augmented Generation (RAG);Smart Manufacturing;Automated Test Case Generation;Multi-Strategy Routing},
+  doi={10.1109/ICETIS66286.2025.11144230},
+  ISSN={},
+  month={June}
+}
+
+@INPROCEEDINGS{11214929,
+  author={Li, Qinting and Han, Zhonghai and Yang, Liangyi and Zhang, Qi and Xiong, Yue},
+  booktitle={2025 8th International Conference on Transportation Information and Safety (ICTIS)}, 
+  title={Automated Compliance Testing Case Generation for Intelligent Connected Vehicles: A Multi-Layer Knowledge-Augmented Framework}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1679-1685},
+  abstract={Intelligent connected vehicle (ICV) testing faces significant challenges due to growing complexity and the need to comply with multiple regulatory standards. Traditional manual template-based and single-standard approaches suffer from limited scenario coverage, compliance risks, and inefficiency. This paper introduces the Multi-Standard Collaborative Compliance Framework (MSCCF), which integrates cross-domain standards through dynamic regulatory knowledge graphs, dual-engine formal verification, compliance-guided generative models, and multidimensional test generation. Our framework combines retrieval-augmented generation (RAG) with rule-constrained reasoning to create compliance-guaranteed test cases, while enabling comprehensive scenario simulation through hierarchical task decomposition (HTD). Experimental validation demonstrates superior performance in compliance accuracy (F1-score: 0.94) and scenario coverage (89.7%) compared to baseline methods, establishing a scalable approach for multi-standard ICV testing across seven critical dimensions: road geometry, infrastructure status, dynamic objects, environmental conditions, digital communication, occupant states, and vehicle health.},
+  keywords={Connected vehicles;Accuracy;Systematics;Scalability;Transportation;Knowledge graphs;Conformance testing;Test pattern generators;Vehicle dynamics;Standards;Intelligent connected vehicle (ICV);multi-standard compliance;test generation;dynamic regulatory knowledge graphs},
+  doi={10.1109/ICTIS68762.2025.11214929},
+  ISSN={2832-899X},
+  month={July}
+}
+
+@ARTICLE{11411685,
+  author={Sisomboon, Wantana and Kaewyotha, Jakkrit and Songpan, Wararat},
+  journal={IEEE Access}, 
+  title={Automated Software Test Case Generation Using Directional Partially Weighted Ensemble Large Language Models With Retrieval-Augmented Generation (RAG)}, 
+  year={2026},
+  volume={14},
+  number={},
+  pages={31124-31145},
+  abstract={Ensuring software quality relies on testing practices that can reliably confirm whether delivered systems meet user requirements. While Acceptance Test-Driven Development (ATDD) encourages early collaboration between stakeholders and developers, creating comprehensive acceptance test cases remains a human task that heavily depends on domain expertise. Recent progress in Large Language Models (LLMs) has made automated test case generation feasible. However, approaches based on a single model often suffer from performance instability, uneven test coverage, and a limited ability to generalize across heterogeneous requirements. This study proposes an automated test case generation framework that combines directional partially weighted ensemble large language models (LLMs) with Retrieval-Augmented Generation (RAG). The framework assigns model influence dynamically according to directional performance trends and degrees of partial correctness and consolidates candidate outputs through a weighted majority-voting mechanism and cross-validation conducted over multiple folds. Five state-of-the-art LLMs, Claude, ChatGPT, Gemini, Qwen, and Mistral, were evaluated using 16 criteria derived from four widely adopted closed box testing techniques: Boundary Value Analysis, Equivalence Partitioning, Use Case testing, and State Transition testing. Under the evaluated experimental conditions, the proposed framework achieved 98.44% test coverage, indicating complete consistency with the defined gold-standard acceptance criteria. Cross-validation results further demonstrate improved robustness, stronger generalization to previously unseen requirements, and linear scalability, supporting practical deployment in real-world software development environments, and complexity analysis to confirm linear throughout growth (O(n)), which supports efficient deployment under increasing workloads.},
+  keywords={Testing;Retrieval augmented generation;Software testing;Large language models;Closed box;Test pattern generators;Collaboration;Chatbots;Stakeholders;Software reliability;LLM;RAG;weighted ensemble;directional partially;test coverage;ATDD;automated software testing},
+  doi={10.1109/ACCESS.2026.3667925},
+  ISSN={2169-3536},
+  month={}
+}

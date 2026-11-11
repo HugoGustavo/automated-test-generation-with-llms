@@ -1,0 +1,23 @@
+% Flowchart of the research question derivation (Section: Keywording of Abstracts).
+% Requires the TikZ libraries arrows.meta and positioning.
+\begin{tikzpicture}[
+    font=\footnotesize,
+    node distance=5mm,
+    >={Stealth[length=2mm]},
+    process/.style={draw, rounded corners=3pt, fill=gray!15, text width=4.4cm, align=center, inner sep=3pt},
+    terminal/.style={draw, rounded corners=3.5mm, text width=4.0cm, align=center, inner sep=3pt},
+    flowlabel/.style={right, font=\scriptsize\itshape, inner sep=2pt},
+]
+    \node[terminal] (rq0) {RQ0 (broad research question)};
+    \node[process, below=of rq0] (search) {\textbf{1. Query Databases}\\ structured query in six databases};
+    \node[process, below=of search] (filter) {\textbf{2. Filter Articles}\\ inclusion/exclusion criteria,\\ LLM-assisted screening, deduplication};
+    \node[process, below=of filter] (extract) {\textbf{3. Extract References}\\ title, abstract, and keywords};
+    \node[process, below=of extract] (generate) {\textbf{4. Generate Research Questions}};
+    \node[terminal, below=of generate] (rqs) {12 specific RQs (RQ1--RQ12)};
+
+    \draw[->] (rq0) -- (search);
+    \draw[->] (search) -- node[flowlabel] {8,895 records} (filter);
+    \draw[->] (filter) -- node[flowlabel] {618 studies} (extract);
+    \draw[->] (extract) -- node[flowlabel] {reference base} (generate);
+    \draw[->] (generate) -- node[flowlabel] {six themes} (rqs);
+\end{tikzpicture}

@@ -1,0 +1,764 @@
+@ARTICLE{10329992,
+  author={Schäfer, Max and Nadi, Sarah and Eghbali, Aryaz and Tip, Frank},
+  journal={IEEE Transactions on Software Engineering}, 
+  title={An Empirical Evaluation of Using Large Language Models for Automated Unit Test Generation}, 
+  year={2024},
+  volume={50},
+  number={1},
+  pages={85-105},
+  abstract={Unit tests play a key role in ensuring the correctness of software. However, manually creating unit tests is a laborious task, motivating the need for automation. Large Language Models (LLMs) have recently been applied to various aspects of software development, including their suggested use for automated generation of unit tests, but while requiring additional training or few-shot learning on examples of existing tests. This paper presents a large-scale empirical evaluation on the effectiveness of LLMs for automated unit test generation without requiring additional training or manual effort. Concretely, we consider an approach where the LLM is provided with prompts that include the signature and implementation of a function under test, along with usage examples extracted from documentation. Furthermore, if a generated test fails, our approach attempts to generate a new test that fixes the problem by re-prompting the model with the failing test and error message. We implement our approach in TestPilot, an adaptive LLM-based test generation tool for JavaScript that automatically generates unit tests for the methods in a given project's API. We evaluate TestPilot using OpenAI's gpt3.5-turbo LLM on 25 npm packages with a total of 1,684 API functions. The generated tests achieve a median statement coverage of 70.2% and branch coverage of 52.8%. In contrast, the state-of-the feedback-directed JavaScript test generation technique, Nessie, achieves only 51.3% statement coverage and 25.6% branch coverage. Furthermore, experiments with excluding parts of the information included in the prompts show that all components contribute towards the generation of effective test suites. We also find that 92.8% of TestPilot's generated tests have $\leq$≤ 50% similarity with existing tests (as measured by normalized edit distance), with none of them being exact copies. Finally, we run TestPilot with two additional LLMs, OpenAI's older code-cushman-002 LLM and StarCoder, an LLM for which the training process is publicly documented. Overall, we observed similar results with the former (68.2% median statement coverage), and somewhat worse results with the latter (54.0% median statement coverage), suggesting that the effectiveness of the approach is influenced by the size and training set of the LLM, but does not fundamentally depend on the specific model.},
+  keywords={Training;Test pattern generators;Documentation;Codes;Source coding;Software;Electronic mail;Test generation;JavaScript;language models},
+  doi={10.1109/TSE.2023.3334955},
+  ISSN={1939-3520},
+  month={Jan}
+}
+
+@INPROCEEDINGS{11267873,
+  author={Afatsun, Merve Nergiz and Keküllüoğlu, Özay and Aydiner, Mustafa Güçlü},
+  booktitle={2025 9th International Symposium on Multidisciplinary Studies and Innovative Technologies (ISMSIT)}, 
+  title={Transforming Test Automation: AI-Driven Object Locator Extraction for Delphi-Based Applications}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-15},
+  abstract={The advent of artificial intelligence has introduced significant possibilities in the field of software testing automation, offering efficiency gains and enhanced accuracy through innovative methodologies. In this paper, we present a novel automated system designed to extract object locators from Delphi-based applications, utilizing a robust combination of generative AI techniques and advanced prompt engineering strategies. Our approach centers around the fine-tuning of a large language model, Mistral-7B, which, when paired with strategic prompt engineering, demonstrates unprecedented accuracy in identifying and mapping user interface elements within Delphi codebases.As software development cycles continue to accelerate, the imperative to reduce time-intensive manual testing processes has never been more crucial. The system significantly mitigates the labor-intensive nature of manual locator extraction, proposing a scalable solution capable of adapting to varying code structures. Experimentation reveals that our model not only enhances the automation of UI element mapping but also provides insights into improving the adaptability and rigor of software testing processes. Through this work, we highlight the potential for AI-driven automation to revolutionize testing workflows, promoting efficiency and reducing human error.Furthermore, we explore the feasibility of extending our automated system to incorporate web-based applications, enabling the automatic extraction of HTML elements and object locators. This expansion underscores our broader vision of developing a unified test automation framework applicable across multiple platforms, ultimately fostering innovation and optimization in software testing paradigms. Our findings contribute a substantial forward leap in the automation of test processes, presenting a transformative tool for practitioners and researchers alike.},
+  keywords={Software testing;Productivity;Technological innovation;Automation;Accuracy;Manuals;User interfaces;Prompt engineering;Optimization;Software development management;Artificial Intelligence;Software Testing Automation;Object Locator Extraction;Generative AI;Prompt Engineering;Delphi-based Applications;Unified Test Automation},
+  doi={10.1109/ISMSIT67332.2025.11267873},
+  ISSN={2770-7962},
+  month={Nov}
+}
+
+@INPROCEEDINGS{11273886,
+  author={Nayyeri, Amirreza and Rasoolzadegan, Abbas},
+  booktitle={2025 15th International Conference on Computer and Knowledge Engineering (ICCKE)}, 
+  title={A Privacy-Preserving Recommender for Filling Web Forms Using a Local Large Language Model}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-7},
+  abstract={Web applications are increasingly used in critical domains such as education, finance, and e-commerce. This highlights the need to ensure their failure-free performance. One effective method for evaluating failure-free performance is web form testing, where defining effective test scenarios is key to a complete and accurate evaluation. A core aspect of this process involves filling form fields with suitable values to create effective test cases. However, manually generating these values is time-consuming and prone to errors. To address this, various tools have been developed to assist testers. With the appearance of large language models (LLMs), a new generation of tools seeks to handle this task more intelligently. Although many LLM-based tools have been introduced, as these models typically rely on cloud infrastructure, their use in testing confidential web forms raises concerns about unintended data leakage and breaches of confidentiality. This paper introduces a privacy-preserving recommender that operates locally using a large language model. The tool assists testers in web form testing by suggesting effective field values. This tool analyzes the HTML structure of forms, detects input types, and extracts constraints based on each field's type and contextual content, guiding proper field filling. A comparative evaluation with the T5-GPT approach on five web apps shows comparable performance (63 vs. 64 detected forms), with our local approach excelling in privacy preservation by avoiding external dependencies. Real-world testing on ten Persian-language websites yields high metrics: 92.9% accuracy, 94.4% precision, and 98% recall in field detection and value generation. These results demonstrate that the proposed approach delivers high accuracy in input generation and yields fewer failures. Overall, the study confirms the tool's effectiveness in locally filling web forms while preserving privacy, with robust performance across diverse, real-world UI contexts, including non-English languages.},
+  keywords={Software testing;Measurement;Knowledge engineering;Privacy;Accuracy;Large language models;Finance;Filling;Software reliability;Electronic commerce;Large Language Model;Web Form Filling;Software Testing;Software reliability},
+  doi={10.1109/ICCKE68588.2025.11273886},
+  ISSN={2643-279X},
+  month={Oct}
+}
+
+@INPROCEEDINGS{11206755,
+  author={Özaytürk, Hasen and Buzluca, Feza},
+  booktitle={2025 10th International Conference on Computer Science and Engineering (UBMK)}, 
+  title={AutoStructor: A Generative AI-Based Framework for Automated Program Repair with Deep Learning-Guided Fault Localization}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1193-1198},
+  abstract={Current automated program repair (APR) approaches still suffer from two critical limitations: inaccurate fault localization and ineffective patch generation. This paper presents a novel hybrid framework, AutoStructor, that proposes a Quality-Aware Graph-Based Machine Learning Fault Localization (GBMFL) and a Large Language Model (LLM)-based patch generation technique to effectively address these challenges. Our key innovation lies in integrating 21 comprehensive code quality metrics and sophisticated multi-modal attention mechanisms, including quality-aware, graph-aware, sparse, and multiscale attention into the GBMFL architecture, coupled with intelligent test failure analysis for superior code understanding and patch generation. AutoStructor bridges the gap between fault localization and patch generation through an end-to-end pipeline that leverages generative AI for intelligent patch synthesis. We evaluate our approach on the Defects4J benchmark, demonstrating significant improvements in fault localization accuracy (81.9% Top-1, 93.4% Top-3) with a Mean First Rank of 1.13, and successful patch generation for 48 out of 61 active Lang project bugs. Notably, our structured test analysis approach enables cost-effective deployment using compact LLMs, achieving effective repair.},
+  keywords={Location awareness;Measurement;Technological innovation;Codes;Large language models;Pipelines;Failure analysis;Software quality;Maintenance engineering;Hybrid power systems;automated program repair;graph-based fault localization;multi-modal attention;test failure analysis;software quality metrics},
+  doi={10.1109/UBMK67458.2025.11206755},
+  ISSN={2521-1641},
+  month={Sep.}
+}
+
+@INPROCEEDINGS{11497649,
+  author={Vijayamahantesh and A, Ashwitha and E, Naresh and Pareek, Piyush Kumar},
+  booktitle={2026 International Conference on Next-Gen Quantum and Advanced Computing: Algorithms, Security, and Beyond (NQComp)}, 
+  title={TestAgentX: Leveraging Large Language Models and Reinforcement Learning for Scalable and Adaptive Software Testing}, 
+  year={2026},
+  volume={},
+  number={},
+  pages={599-604},
+  abstract={The goal of resilient software testing is to guarantee that software systems continue to work as intended in the face of failure, changes in their environment, or unexpected inputs. Software resilience under stress is evaluated using methods like adaptive test techniques, mutation testing, and chaos engineering to improve dependability in hostile or ever-changing environments. Automating and improving software quality assurance is the goal of this paper's agentic testing system, which makes use of artificial intelligence agents. To create context aware test cases, assess the effectiveness of patches, and discover regressions in real-time, the proposed approach blends reinforcement learning, fuzzy logic, knowledge graph reasoning, and large language models (LLMs). Agentic architecture allows for human-in-the-loop review for continual improvement and dynamically adapts to changing codebases, unlike conventional static testing techniques. To run a plethora of tests on the Defects4J dataset, which contains 835 actual Java errors. When contrasted with EvoSuite, the framework's results showed an 89% test coverage, an 84% mutation score, and a 55% reduction in test generation time. It also showed an 86% regression detection rate, a 91% accuracy rate for patch verification, and a very low false positive rate of only 8%. By a wide margin, fuzzy validation outperformed conventional methods, with an 82% developer acceptance rate and a contextual relevance score of 0.88. Notably, scores surpassing 75% were achieved in the areas of cross-project generalization, noisy tolerance, and idea drift adaptability. Positioned as a next generation solution for continuous integration pipelines in modern software engineering environments, the results underscore the framework's ability to deliver robust, explainable, and scalable testing automation.},
+  keywords={Radio broadcasting;Frequency modulation;Feedback;Circuits;Location awareness;Radio access networks;Regional area networks;Protocols;Mobile communication;HTTP;resilient software testing;large language models;reinforcement learning;adaptive test strategy;defects4j dataset;fuzzy logic},
+  doi={10.1109/NQComp68334.2026.11497649},
+  ISSN={},
+  month={March}
+}
+
+@ARTICLE{11506351,
+  author={Ahmad, Azeem and Naeem, Muhammad Rashid},
+  journal={IEEE Access}, 
+  title={Boosting Test Generation in Industrial Codebases: A Comparative Study of Base and Fine-Tuned LLMs}, 
+  year={2026},
+  volume={},
+  number={},
+  pages={1-1},
+  abstract={Large Language Models (LLMs) have demonstrated promising capabilities in automated software engineering tasks, particularly in test case generation. Recently, researchers and practitioners have actively explored using open-source datasets with both open-source and commercial LLMs for generating test cases from source code and related software artifacts. However, the effectiveness of (fine-tuned vs base) open-source LLMs in industrial settings remains under explored. This study investigates the performance of various fine-tuned and base configurations of the DeepSeek-Coder 33B model (i.e., base and instruct) for unit test generation in a large-scale industrial code-base. This study propose a two-loop refinement strategy: Loop 1 generates initial test cases, while Loop 2 refines failed cases based on compilation errors and code coverage feedback. Eight different LLM configurations were evaluated using compilation success rate and line coverage as performance metrics. Our findings reveal that fine-tuned models significantly outperform base models, and the proposed refinement strategy leads to measurable improvements in both test compilation and code coverage. The use of fine-tuned-instruct model in loop 1 and fine-tuned-instruct model in loop 2 yielded the highest line coverage (62.56%) and compilation success. This work demonstrates the value of domain-specific fine-tuning and multi-phase feedback strategies in enhancing LLM-powered software testing pipelines.},
+  keywords={Feedback;Circuits;LoRa;Communication systems;Internet;Radio access networks;Regional area networks;Telecommunications;Computer networks;Radio communication},
+  doi={10.1109/ACCESS.2026.3690571},
+  ISSN={2169-3536},
+  month={}
+}
+
+@INPROCEEDINGS{10792720,
+  author={Yin, Hang and Mohammed, Hamza and Boyapati, Sai},
+  booktitle={2024 9th International Conference on Intelligent Informatics and Biomedical Sciences (ICIIBMS)}, 
+  title={Leveraging Pre-Trained Large Language Models (LLMs) for On-Premises Comprehensive Automated Test Case Generation: An Empirical Study}, 
+  year={2024},
+  volume={9},
+  number={},
+  pages={597-607},
+  abstract={The rapidly evolving field of Artificial Intelligence (AI)-assisted software testing has predominantly focused on automated test code generation, with limited research exploring the realm of automated test case generation from user stories requirements. This paper presents a comprehensive empirical study on harnessing pre-trained Large Language Models (LLMs) for generating concrete test cases from natural language requirements given in user stories. We investigate the efficacy of various prompting and alignment techniques, including prompt chaining, few-shot instructions, and agency-based approaches, to facilitate secure on-premises deployment. By integrating our learnings with an on-premises model setup, wherein we deploy a RoPE scaled 4-bit quantized LLaMA 3 70B Instruct model, optionally augmented with LoRA adapters trained on QA datasets, we demonstrate that this approach yields more accurate and consistent test cases despite video random-access memory (VRAM) constraints, thereby maintaining the security benefits of an on-premises deployment.},
+  keywords={Software testing;Adaptation models;Accuracy;Large language models;Scalability;Natural languages;Memory management;Software;Security;Informatics;Test Case Generation;Large Language Models (LLMs);AI-Assisted Testing;On-Premises Deployment;Software Testing;Artificial Intelligence (AI);Machine Learning (ML);Deep Learning;Neural Networks;Intelligent Systems;Software Development and Testing;Natural Language Processing (NLP);Pre-trained LLMs;Prompting and Alignment Techniques;Onpremises Deployment;Data Security and Privacy;Quality Assurance (QA)},
+  doi={10.1109/ICIIBMS62405.2024.10792720},
+  ISSN={2189-8723},
+  month={Nov}
+}
+
+@INPROCEEDINGS{10638609,
+  author={Rahman, Shanto and Baz, Abdelrahman and Misailovic, Sasa and Shi, August},
+  booktitle={2024 IEEE Conference on Software Testing, Verification and Validation (ICST)}, 
+  title={Quantizing Large-Language Models for Predicting Flaky Tests}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={93-104},
+  abstract={A major challenge in regression testing practice is the presence of flaky tests, which non-deterministically pass or fail when run on the same code. Previous research identified multiple categories of flaky tests. Prior research has also de-veloped techniques for automatically detecting which tests are flaky or categorizing flaky tests, but these techniques generally involve repeatedly rerunning tests in various ways, making them costly to use. Although several recent approaches have utilized large-language models (LLMs) to predict which tests are flaky or predict flaky-test categories without needing to rerun tests, they are costly to use due to relying on a large neural network to perform feature extraction and prediction. We propose FlakyQ to improve the effectiveness of LLM-based flaky-test prediction by quantizing LLM's weights. The quantized LLM can extract features from test code more efficiently. To make up for loss in prediction performance due to quantization, we further train a traditional ML classifier (e.g., a random forest) to learn from the quantized LLM-extracted features and do the same prediction. The final model has similar prediction performance while running faster than the non-quantized LLM. Our evaluation finds that FlakyQ classifiers consistently improves prediction time over the non-quantized LLM classifier, saving 25.4% in prediction time over all tests, along with a 48.4 % reduction in memory usage. Furthermore, prediction performance is equal or better than the non-quantized LLM classifier.},
+  keywords={Training;Software testing;Quantization (signal);Codes;Computational modeling;Source coding;Artificial neural networks;Flaky Test Categorization;Large-Language Models;Quantization},
+  doi={10.1109/ICST60714.2024.00018},
+  ISSN={2159-4848},
+  month={May}
+}
+
+@INPROCEEDINGS{10638556,
+  author={Santos, Robson and Santos, Italo and Magalhaes, Cleyton and de Souza Santos, Ronnie},
+  booktitle={2024 IEEE Conference on Software Testing, Verification and Validation (ICST)}, 
+  title={Are We Testing or Being Tested? Exploring the Practical Applications of Large Language Models in Software Testing}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={353-360},
+  abstract={A Large Language Model (LLM) represents a cutting-edge artificial intelligence model that generates content, including grammatical sentences, human-like paragraphs, and syntactically code snippets. LLMs can play a pivotal role in soft-ware development, including software testing. LLMs go beyond traditional roles such as requirement analysis and documentation and can support test case generation, making them valuable tools that significantly enhance testing practices within the field. Hence, we explore the practical application of LLMs in software testing within an industrial setting, focusing on their current use by professional testers. In this context, rather than relying on existing data, we conducted a cross-sectional survey and collected data within real working contexts-specifically, engaging with practitioners in industrial settings. We applied quantitative and qualitative techniques to analyze and synthesize our collected data. Our findings demonstrate that LLMs effectively enhance testing documents and significantly assist testing professionals in programming tasks like debugging and test case automation. LLMs can support individuals engaged in manual testing who need to code. However, it is crucial to emphasize that, at this early stage, software testing professionals should use LLMs with caution while well-defined methods and guidelines are being built for the secure adoption of these tools.},
+  keywords={Software testing;Codes;Automation;Large language models;Manuals;Debugging;Software;software testing;survey;test engineers;large language models;LLMs},
+  doi={10.1109/ICST60714.2024.00039},
+  ISSN={2159-4848},
+  month={May}
+}
+
+@ARTICLE{11121142,
+  author={Zekarias Esubalew, Sintayehu and Assefa, Beakal Gizachew},
+  journal={IEEE Access}, 
+  title={Reimagining Unit Test Generation With AI: A Journey From Evolutionary Models to Transformers}, 
+  year={2025},
+  volume={13},
+  number={},
+  pages={154908-154929},
+  abstract={The rapid evolution of software development necessitates efficient unit testing to ensure reliability, yet manual test case generation is labor-intensive and often inadequate for agile workflows. Despite advancements, a comprehensive review of AI-driven unit test case generation, particularly for Java, is lacking, motivating this study to address this gap. The paper examines AI algorithms for unit test case generation, focusing on Java-specific challenges like class hierarchies and dependency injection. We propose a novel taxonomy categorizing methods into traditional machine learning (e.g., genetic algorithms, SVMs), deep learning (e.g., RNNs, GNNs), and transformer-based approaches (e.g., PLBART, enhanced by LoRA and QLoRA). Key contributions include: 1) a structured taxonomy for comparing AI methods based on effectiveness, usability, and maintainability; 2) a Java-specific focus addressing enterprise system complexities; and 3) identification of research gaps, such as scalability and assertion accuracy. Findings reveal that transformer-based models like A3Test and ChatUniTest achieve up to 59% test case correctness and 77% focal method coverage, outperforming traditional methods, though challenges in computational cost and assertion accuracy persist. Tools are evaluated for integration with CI/CD pipelines and advanced capabilities like parameter-efficient fine-tuning (PEFT) using LoRA and QLoRA. This review provides a roadmap for researchers and practitioners to advance automated, high-quality unit testing for Java software quality.},
+  keywords={Artificial intelligence;Transformers;Surveys;Software;Software testing;Test pattern generators;Taxonomy;Deep learning;Software development management;Java;Automated unit test generation;machine learning;transformer models;LoRA;QLoRA;PLBART;software testing;java software quality},
+  doi={10.1109/ACCESS.2025.3597049},
+  ISSN={2169-3536},
+  month={}
+}
+
+@INPROCEEDINGS{10554852,
+  author={Xue, Zhiyi and Li, Liangguo and Tian, Senyue and Chen, Xiaohong and Chen, Liangyu and Zhang, Min and Li, Pingping and Jiang, Tingting},
+  booktitle={2024 IEEE/ACM 46th International Conference on Software Engineering: Companion Proceedings (ICSE-Companion)}, 
+  title={Domain Knowledge is All You Need: A Field Deployment of LLM-Powered Test Case Generation in FinTech Domain}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={314-315},
+  abstract={Despite the promise of automation, general-purpose Large Language Models (LLMs) face difficulties in generating complete and accurate test cases from informal software requirements, primarily due to challenges in interpreting unstructured text and producing diverse, relevant scenarios. This paper argues that incorporating domain knowledge significantly improves LLM performance in test case generation. We report on the successful deployment of our LLM-powered tool, LLM4Fin, in the FinTech domain, showcasing the crucial role of domain knowledge in addressing the aforementioned challenges. We demonstrate two methods for integrating domain knowledge: implicit incorporation through model fine-tuning, and explicit incorporation with algorithm design. This combined approach delivers remarkable results, achieving up to 98.18% improvement in test scenario coverage and reducing generation time from 20 minutes to 7 seconds.},
+  keywords={Knowledge engineering;Automation;Accuracy;Software algorithms;Software;Faces;Software engineering;Large Language Models;Software Requirements;Test Case Generation;Natural Language},
+  doi={10.1145/3639478.3643087},
+  ISSN={2574-1934},
+  month={April}
+}
+
+@ARTICLE{11422864,
+  author={Trong, Mai Phu and Tung Son, Ngo and Hai, Le Ngoc and Giang, Vu Truong and Viet, Bui Hoang and Tung, Dinh Thanh},
+  journal={IEEE Access}, 
+  title={A Business Process-Centric Approach for LLM-Driven Functional Test Generation}, 
+  year={2026},
+  volume={14},
+  number={},
+  pages={44120-44146},
+  abstract={Validating end-to-end business processes requires strict adherence to state logic, particularly for long-horizon workflows involving complex multi-role interactions. While Large Language Models (LLMs) offer promising automation capabilities, current approaches often lack integration with formal testing principles, leading to inherent “happy path bias” and difficulties in maintaining context across extended sessions. This paper proposes a hybrid, business process-centric methodology that addresses these limitations through a “separation of concerns” architecture. Our framework utilizes LLMs for semantic comprehension while rigorously enforcing Specification-Based Testing techniques-specifically Equivalence Partitioning, Boundary Value Analysis (BVA), and Pairwise Testing-to optimize data coverage. Furthermore, the methodology employs graph-based modeling for deterministic navigation and systematically synthesizes exception flows to ensure robustness for cross-functional user journeys. Crucially, the generated test artifacts are engineered for compliance with the ISO/IEC/IEEE 29119-3 standard, ensuring industrial interoperability. Empirical evaluation across multiple subject systems demonstrates high-fidelity performance, achieving significant Boundary Value Coverage (avg. >88%), superior State Transition Coverage (avg. >95%), and high semantic quality scores (>92%). Moreover, an economic feasibility analysis confirms the framework’s efficiency, with operational costs ranging from  ${\$}$ 1.41 to  ${\$}$ 1.82 per complete regression suite. These findings suggest that integrating LLMs as semantic engines within a framework grounded in established software testing techniques offers a robust and cost-effective path toward scalable test automation.},
+  keywords={Testing;Business;Standards;Semantics;Software development management;Large language models;Automation;Translation;Test pattern generators;System testing;Large language models;software testing;test automation;functional testing},
+  doi={10.1109/ACCESS.2026.3671629},
+  ISSN={2169-3536},
+  month={}
+}
+
+@INPROCEEDINGS{10962507,
+  author={Rincon, André Mesquita and Vincenzi, Auri Marcelo Rizzo and Faria, João Pascoal},
+  booktitle={2025 IEEE International Conference on Software Testing, Verification and Validation Workshops (ICSTW)}, 
+  title={LLM Prompt Engineering for Automated White-Box Integration Test Generation in REST APIs}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={21-28},
+  abstract={This study explores prompt engineering for automated white-box integration testing of RESTful APIs using Large Language Models (LLMs). Four versions of prompts were designed and tested across three OpenAI models (GPT-3.5 Turbo, GPT-4 Turbo, and GPT-4o) to assess their impact on code coverage, token consumption, execution time, and financial cost. The results indicate that different prompt versions, especially with more advanced models, achieved up to 90% coverage, although at higher costs. Additionally, combining test sets from different models increased coverage, reaching 96% in some cases. We also compared the results with EvoMaster, a specialized tool for generating tests for REST APIs, where LLM-generated tests achieved comparable or higher coverage in the benchmark projects. Despite higher execution costs, LLMs demonstrated superior adaptability and flexibility in test generation.},
+  keywords={Software testing;Costs;Codes;Large language models;Conferences;Restful API;Benchmark testing;Prompt engineering;Test pattern generators;Glass box;Prompt Engineering;Large Language Models;Automated Integration Testing;White-Box Testing;REST APIs},
+  doi={10.1109/ICSTW64639.2025.10962507},
+  ISSN={2159-4848},
+  month={March}
+}
+
+@INPROCEEDINGS{10988978,
+  author={Gorla, Daniele and Kumar, Shivam and Roselli Lorenzini, Pietro Nicolaus and Alipourfaz, Alireza},
+  booktitle={2025 IEEE Conference on Software Testing, Verification and Validation (ICST)}, 
+  title={CubeTesterAI: Automated JUnit Test Generation Using the LLaMA Model}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={565-576},
+  abstract={This paper presents an approach to automating JUnit test generation for Java applications using the Spring Boot framework, leveraging the LLaMA (Large Language Model Architecture) model to enhance the efficiency and accuracy of the testing process. The resulting tool, called CubeTesterAI, includes a user-friendly web interface and the integration of a CI/CD pipeline using GitLab and Docker. These components streamline the automated test generation process, allowing developers to generate JUnit tests directly from their code snippets with minimal manual intervention. The final implementation executes the LLaMA models through RunPod, an online GPU service, which also enhances the privacy of our tool. Using the advanced natural language processing capabilities of the LLaMA model, CubeTesterAI is able to generate test cases that provide high code coverage and accurate validation of software functionalities in Java-based Spring Boot applications. Furthermore, it efficiently manages resource-intensive operations and refines the generated tests to address common issues like missing imports and handling of private methods. By comparing CubeTesterAI with some state-of-the-art tools, we show that our proposal consistently demonstrates competitive and, in many cases, better performance in terms of code coverage in different real-life Java programs.},
+  keywords={Software testing;Java;Privacy;Codes;Accuracy;Large language models;Pipelines;Software;Test pattern generators;Proposals;Automated test generation;AI-assisted software testing;JUnit tests;Large Language Models;LLaMA},
+  doi={10.1109/ICST62969.2025.10988978},
+  ISSN={2159-4848},
+  month={March}
+}
+
+@ARTICLE{11175381,
+  author={Ayli, Maroun and Bakouny, Youssef and Jalloul, Nader and Seifeddine, Hani and Kilany Chamoun, Rima},
+  journal={IEEE Access}, 
+  title={A Domain-Agnostic Framework for Visual Element Detection From High-Level Descriptions}, 
+  year={2025},
+  volume={13},
+  number={},
+  pages={174503-174516},
+  abstract={Modern web applications feature dynamic and visually complex interfaces that challenge the reliability and maintainability of traditional automated testing frameworks. These conventional approaches often rely on fixed document object model locators, such as XPath or CSS selectors, which are highly sensitive to minor user interface changes. As a result, tests frequently break, leading to increased maintenance costs and reduced accessibility for non-technical users. To address these challenges, we propose a unified and lightweight framework that combines a domain-specific restricted natural language for intuitive, high-level test specification, with a vision-language module capable of real-time user interface element detection directly from live screenshots. This eliminates the brittleness of fixed locators and enables robust test execution even under frequent user interface changes. To validate our approach, we implemented and deployed a fully functional prototype, demonstrating that the system can operate efficiently on consumer-grade hardware without reliance on cloud services offering a highly cost-effective solution suitable for enterprise use. A key enabler of our framework is the streamlined dataset construction process: we introduce a hybrid data acquisition strategy that combines automated annotation from large-scale web crawling with a scalable human-in-the-loop refinement pipeline, significantly reducing manual effort while maintaining high data quality. Notably, the framework is domain-agnostic and can be readily adapted to other disciplines requiring efficient vision-language fine-tuning, broadening its potential impact beyond web testing. Experimental evaluations show substantial improvements in test robustness, maintenance overhead, and execution efficiency, establishing our framework as a practical and scalable solution for next-generation automated UI testing.},
+  keywords={Testing;Graphical user interfaces;Natural languages;Grounding;Visualization;Optical character recognition;Automation;Training;Pipelines;Benchmark testing;Automated UI testing;vision language models;domain-specific language;compiler;computer vision;object detection},
+  doi={10.1109/ACCESS.2025.3613058},
+  ISSN={2169-3536},
+  month={}
+}
+
+@INPROCEEDINGS{10988995,
+  author={More, Riddhi and Bradbury, Jeremy S.},
+  booktitle={2025 IEEE Conference on Software Testing, Verification and Validation (ICST)}, 
+  title={An Analysis of LLM Fine-Tuning and Few-Shot Learning for Flaky Test Detection and Classification}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={349-359},
+  abstract={Flaky tests exhibit non-deterministic behavior during execution and they may pass or fail without any changes to the program under test. Detecting and classifying these flaky tests is crucial for maintaining the robustness of automated test suites and ensuring the overall reliability and confidence in the testing. However, flaky test detection and classification is challenging due to the variability in test behavior, which can depend on environmental conditions and subtle code interactions. Large Language Models (LLMs) offer promising approaches to address this challenge, with fine-tuning and few-shot learning (FSL) emerging as viable techniques. With enough data fine-tuning a pre-trained LLM can achieve high accuracy, making it suitable for organizations with more resources. Alternatively, we introduce FlakyXbert, an FSL approach that employs a Siamese network architecture to train efficiently with limited data. To understand the performance and cost differences between these two methods, we compare fine-tuning on larger datasets with FSL in scenarios restricted by smaller datasets. Our evaluation involves two existing flaky test datasets, FlakyCat and IDoFT. Our results suggest that while fine-tuning can achieve high accuracy, FSL provides a cost-effective approach with competitive accuracy, which is especially beneficial for organizations or projects with limited historical data available for training. These findings underscore the viability of both fine-tuning and FSL in flaky test detection and classification with each suited to different organizational needs and resource availability.},
+  keywords={Training;Software testing;Accuracy;Costs;Codes;Large language models;Organizations;Network architecture;Robustness;Few shot learning;few-shot learning;fine-tuning;flaky tests;large language models;test classification},
+  doi={10.1109/ICST62969.2025.10988995},
+  ISSN={2159-4848},
+  month={March}
+}
+
+@INPROCEEDINGS{11334646,
+  author={Wu, Mengzhou and Guo, Yuzhe and Cao, Yuan and Lu, Haochuan and Zhang, Hengyu and Zeng, Xia and Yao, Liangchao and Deng, Yuetang and Ran, Dezhi and Yang, Wei and Xie, Tao},
+  booktitle={2025 40th IEEE/ACM International Conference on Automated Software Engineering (ASE)}, 
+  title={Element-Aware Fine-Tuning of Vision-Language Models for Cost-Efficient GUI Testing in an Industrial Setting}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={3581-3592},
+  abstract={User Interface (UI) testing is crucial for quality assurance of industrial mobile applications, and yet it remains labor-intensive and challenging to automate effectively. Recent advances in Vision-Language Models (VLMs) present a promising solution for automating GUI testing by mapping natural language instructions to pixel-level actions, significantly reducing the manual effort required for writing test scripts and even designing test cases. While numerous VLMs have been proposed and evaluated for GUI testing, they often fail to meet two critical industrial requirements: (1) effectiveness when handling complex, multi-step workflows in industrial applications, and (2) efficiency for large-scale, high-frequency testing environments typical in industrial settings. Toward addressing the preceding industrial requirements, in this paper, we report our experiences in developing and deploying RePeek, a novel approach employing a unified three-stage pipeline for both training and inference, enables a VLM to explicitly detect and reason over discrete GUI elements, thereby overcoming the limitations of pixel-based reasoning for both efficiency and effectiveness improvements. In the first stage, RePeek integrates a lightweight UI-element detector named OmniParser to decompose UI screenshots into a structured element list. In the second stage, RePeek adopts the vision encoder of the VLM to generate the embedding for each element. In the third stage, RePeek fuses these element embeddings with the textual instruction to reason and perform classification directly on the UI elements, empowering efficient small models to achieve superior performance against expensive large models. Comprehensive evaluations on public benchmarks and deployment at WeChat show that RePeek consistently achieves superior accuracy and efficiency compared to state-of-the-art VLMs. Specifically, RePeek enables a fine-tuned Qwen2.5-VL-3B model to outperform a 72B model with 75% less training data, validating the effectiveness of incorporating domain knowledge into VLM-based GUI testing. We conclude by summarizing three key lessons from developing and deploying RePeek, offering insights for both researchers and practitioners working on industrial-strength UI testing.},
+  keywords={Visualization;Social networking (online);Training data;Transforms;Benchmark testing;Writing;Message services;Data models;Testing;Graphical user interfaces;Vision-Language Model;GUI Testing;Test Generation;Object Detection;Visual Testing},
+  doi={10.1109/ASE63991.2025.00296},
+  ISSN={2643-1572},
+  month={Nov}
+}
+
+@INPROCEEDINGS{11334344,
+  author={Wang, Xuan and Wang, Yingchuan and Hu, Yongxiang and Zhang, Yu and Jin, Hailiang and Guo, Shiyu and Yuan, Juxing and Zhou, Yangfan},
+  booktitle={2025 40th IEEE/ACM International Conference on Automated Software Engineering (ASE)}, 
+  title={From Redundancy to Efficiency: Exploiting Shared UI Interactions towards Efficient LLM-Based Testing}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={3438-3449},
+  abstract={Redundant test cases, although well-studied in software engineering, are previously underexplored in UI testing of mobile apps. Our study of real-world test suites shows that, equipped with large-scale testing suites, redundancy in UI testing often manifests as redundant UI interactions. Although negligible in traditional script-based workflows, such redundancy severely impacts the efficiency of emerging Large Language Model (LLM)-based UI agents, which incur substantial decision latency and token costs from repeated LLM queries for the same interactions. To this end, based on the idea of reusing LLMs’ former decisions, we present TestWeaver, a cost-effective LLM-based testing framework. Leveraging a semantic annotated UI Transition Graph (UTG), TestWeaver is capable of detecting shared interactions across test cases. It processes each interaction with a single LLM query, and reuses the result whenever the same interaction occurs. We evaluate TestWeaver on real-world test suites from Meituan. It achieves a 92% success rate with an average cost of $0.11 and 89.7 seconds per case, outperforming the state-of-the-art. We have also deployed TestWeaver in a real-world testing workflow at Meituan for over six months. TestWeaver has executed nearly 2,000 test cases and uncovered 10 previously undetected bugs, while reducing manual testing effort by 75%.},
+  keywords={Costs;Large language models;Scalability;Redundancy;Computer bugs;Semantics;Manuals;Mobile applications;Testing;Software engineering;Automatic UI Testing;Large Language Models;Mobile Apps;Cost Optimization},
+  doi={10.1109/ASE63991.2025.00284},
+  ISSN={2643-1572},
+  month={Nov}
+}
+
+@INPROCEEDINGS{11344448,
+  author={Zhang, Huixiang and Emu, Mahzabeen},
+  booktitle={2025 IEEE International Conference on Collaborative Advances in Software and COmputiNg (CASCON)}, 
+  title={Quantum-Guided Test Case Minimization for LLM-Based Code Generation}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={609-610},
+  abstract={Precisely controlling Large Language Models (LLMs) to generate efficient and concise code is a central challenge in software engineering. We introduce a framework based on Test-Driven Development (TDD) that transforms code specification into a combinatorial optimization task. The framework first prompts an LLM to generate a test suite, then formulates the Test Case Minimization (TCM) problem as a Quadratic Unconstrained Binary Optimization (QUBO) model. This QUBO paradigm is compatible with both classical solvers and emerging hardware such as quantum annealers. Experimentally, quantum annealing solves the core TCM task 16 times faster than simulated annealing. This performance underpins our end-to-end framework, which reduces total token consumption by 36.5% and significantly improves code quality. This work demonstrates a powerful synergy between generative AI and combinatorial optimization in software engineering, highlighting the critical importance of precise model formulation.},
+  keywords={Codes;Large language models;Simulated annealing;Transforms;Quantum annealing;Minimization;Software;Hardware;Optimization;Software engineering;large language models;test case minimization;quadratic unconstrained binary optimization},
+  doi={10.1109/CASCON66301.2025.00108},
+  ISSN={},
+  month={Nov}
+}
+
+@INPROCEEDINGS{11451150,
+  author={B C, Chaithra and Ram, Chandan B and Gari, Swathi Papanna},
+  booktitle={2025 International Conference On Emerging Computation and Information Technologies (ICECIT)}, 
+  title={Generative AI for Self-Healing Selenium Tests: Comparative Evaluation of Multiple Open-Source LLMs and Rule-Based Methods}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-6},
+  abstract={Selenium-based automated web testing becomes brittle because even small modifications to web page elements and their corresponding locators result in repeated test breakdowns which need prolonged upkeep. Web applications face limitations in their self-healing capabilities because traditional rule-based strategies fail to adapt to changes in application structure. The research assesses five open-source Large Language Models (LLMs) which include Zephyr, Mistral, Falcon, LLaMA and Gemma to perform self-healing operations on Selenium tests through generative AI while evaluating their performance against rule-based heuristics. The method works for all web operations beyond login verification and produces better results in repair operations than other methods. It produced better results than rule-based heuristics and smaller LLMs because Gemma achieved 53.3% and LLaMA achieved 46.7% success rates. The research evaluates system performance through its assessment of execution time and system resource consumption to demonstrate its suitability for CI/CD operations. It demonstrates how LLMs can decrease maintenance expenses while enhancing testing precision through their upcoming development stages which will concentrate on prompt optimization and domain-specific fine-tuning and industrial-scale deployment.},
+  keywords={Software testing;Generative AI;Large language models;System performance;Web pages;Software systems;Selenium;Maintenance;Software reliability;Optimization;Web test automation;Quality Assurance;Self-healing tests;Generative AI;Large Language Models;Selenium;Locator brittleness;Rule-based methods;Software testing},
+  doi={10.1109/ICECIT67774.2025.11451150},
+  ISSN={},
+  month={Dec}
+}
+
+@INPROCEEDINGS{11391174,
+  author={Onishi, So and Kitamura, Keisuke and Kohiga, Akihito and Koita, Takahiro},
+  booktitle={2025 3rd International Conference on Foundation and Large Language Models (FLLM)}, 
+  title={Balancing Cost and Quality in LLM-based Test Case Generation by Prompt Engineering}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1127-1134},
+  abstract={The use of Large Language Models (LLMs) for automated software test case generation offers significant potential to improve development efficiency, but it is often hindered by high API costs. This paper investigates the effectiveness of prompt engineering as a strategy to reduce costs while maintaining high code coverage. We conduct a comprehensive analysis of four prompt strategies across six models from the Anthropic Claude family with varying capabilities and costs. These strategies consist of a basic prompt, and prompts enhanced with a docstring, an Abstract Syntax Tree (AST), or both. Our findings reveal a clear trade off between cost efficiency and generation reliability. Low cost models like Claude Haiku 3.5 can achieve high coverage (92.3%) at minimal expense, making them ideal for budget constrained applications. We also identify Claude Haiku 4.5 as a highly balanced model, achieving the highest code coverage (93.0%) and high reliability (over 90% success rate) at a moderate cost. Similarly, Claude Sonnet 4.5 deliver near perfect success rates (98.2%), justifying their higher cost for mission critical, fully automated workflows. Importantly, we find that providing a docstring is the single most effective strategy for increasing the success rate on complex problems with most models. This study provides practitioners with actionable guidelines for selecting the optimal model and prompt strategy based on their specific project constraints, balancing cost, code coverage, and reliability.},
+  keywords={Costs;Codes;Large language models;Trees (botanical);Mission critical systems;Syntactics;Reliability engineering;Software;Prompt engineering;Guidelines;LLM;Prompt engineering;test case generation;cost;code coverage},
+  doi={10.1109/FLLM67465.2025.11391174},
+  ISSN={},
+  month={Nov}
+}
+
+@INPROCEEDINGS{11330990,
+  author={Kadkade, Varun and Mishra, Mayank and Nambiar, Manoj and Singhal, Rekha},
+  booktitle={2025 5th International Conference on AI-ML-Systems (AIMLSystems)}, 
+  title={QueRA: Query Synthesis and Resource Access Modelling in RAG}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={168-176},
+  abstract={Retrieval-Augmented Generation (RAG) systems integrate large language models with information retrieval components. These systems mark a shift from structured user interfaces to natural language interfaces (NLIs). This transition eliminates the predictable interaction patterns that traditional performance testing tools rely on to control content access distributions. In RAG systems, the unstructured nature of user queries hampers the ability to simulate required content access distributions; nevertheless, content access distribution remains a critical determinant of performance due to caching effects and the uneven popularity of content. To address this challenge, we make two primary contributions: (1) an optimization-driven query issuance mechanism that enables the simulation of required content access distributions during performance testing, and (2) query generation strategies that provide broad retrieval coverage of the knowledge base while reducing query generation costs by at least $\mathbf{2 0. 9 \%}$ compared to straightforward approaches. Constructing a synthetic test query set with wide coverage is essential for shaping the desired access distribution and for identifying performance bottlenecks across both frequently and infrequently retrieved content. Empirical evaluations also demonstrate that content access distributions, particularly in the presence of caching, have a substantial impact on system's performance metrics. By enabling testing across diverse operational scenarios, our framework supports robust, access distribution-aware performance evaluation. This capability is essential for performance testing of enterprisegrade RAG applications that must meet stringent service-level agreement (SLA) requirements.},
+  keywords={Performance evaluation;Costs;System performance;Large language models;Retrieval augmented generation;Natural languages;Knowledge based systems;User interfaces;Information retrieval;Testing;Performance Testing;RAG;Query Generation},
+  doi={10.1109/AIMLSystems67835.2025.11330990},
+  ISSN={},
+  month={Oct}
+}
+
+@INPROCEEDINGS{11232354,
+  author={Jagielski, Jakub and Rojas, Consuelo and Abel, Markus},
+  booktitle={2025 2nd International Generative AI and Computational Language Modelling Conference (GACLM)}, 
+  title={Exploratory Study on Private GPTs for LLM-Driven Test Generation in Software and Machine Learning Development}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={245-249},
+  abstract={In this contribution, we examine the capability of private GPTs to automatically generate executable test code based on requirements. More specifically, we use acceptance criteria as input, formulated as part of epics, or stories, which are typically used in modern development processes. This gives product owners, or business intelligence, respectively, a way to directly produce testable criteria through the use of LLMs. We explore the quality of the so-produced tests in two ways: i) directly by letting the LLM generate code from requirements, ii) through an intermediate step using Gherkin syntax. As a result, it turns out that the two-step procedure yields better results - where we define better in terms of human readability and best coding practices, i.e. lines of code and use of additional libraries typically used in testing. Concretely, we evaluate prompt effectiveness across two scenarios—a simple "Hello World" program and a digit classification model—showing that structured prompts lead to higher-quality test outputs.},
+  keywords={Codes;Translation;Machine learning;Syntactics;Encoding;Software;Test pattern generators;Reliability;Standards;Testing;component;formatting;style;styling;insert},
+  doi={10.1109/GACLM67198.2025.11232354},
+  ISSN={},
+  month={Aug}
+}
+
+@INPROCEEDINGS{11229491,
+  author={Ni, Chao and Wang, Xiaoya and Yin, Xin and Chen, Liushan and Ma, Guojun},
+  booktitle={2025 IEEE 36th International Symposium on Software Reliability Engineering (ISSRE)}, 
+  title={A Cascaded Pipeline for Self-Directed, Model-Agnostic Unit Test Generation via LLMs}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={276-287},
+  abstract={While existing ML-based unit test generation methods show promising results, they face three key limitations: (1) incomplete test case generation with excessive focus on test oracles, (2) semantic inconsistencies between test components, and (3) dependency on closed-source models compromising data security. In this paper, we propose a novel approach named CasModaTest, a cascaded, model-agnostic, and end-to-end unit test generation framework, to alleviate the above limitations. Specifically, CasModaTest first splits the unit test generation task as two cascaded steps: test prefix generation and test oracle generation. Then, to better stimulate models’ learning ability, we manually build large-scale demo pools to provide CasModaTest with high-quality test prefixes and test oracles examples. Finally, CasModaTest assembles test components and validates their functionality through execution, with error correction during compilation/runtime. Our evaluation on the Defects4J benchmark demonstrates CasModaTest’s superiority over five state-of-the-art approaches, showing significant improvements in both accuracy and focal method coverage. Further validation across $\mathbf{1, 6 2 5}$ methods from six real-world projects reveals that CasModaTest achieves substantially higher code coverage metrics (method/line/branch coverage) compared to the dedicated coverage tool EvoSuite.},
+  keywords={Measurement;Large language models;Data security;Pipelines;Semantics;Data models;Software reliability;Error correction;Test pattern generators;Faces;Unit Test Generation;Large Language Model;Model-agnostic;Cascaded Pipeline},
+  doi={10.1109/ISSRE66568.2025.00037},
+  ISSN={2332-6549},
+  month={Oct}
+}
+
+@INPROCEEDINGS{10962485,
+  author={Straubinger, Philipp and Kreis, Marvin and Lukasczyk, Stephan and Fraser, Gordon},
+  booktitle={2025 IEEE International Conference on Software Testing, Verification and Validation Workshops (ICSTW)}, 
+  title={Mutation Testing via Iterative Large Language Model-Driven Scientific Debugging}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={358-367},
+  abstract={Large Language Models (LLMs) can generate plausible test code. Intuitively they generate this by imitating tests seen in their training data, rather than reasoning about execution semantics. However, such reasoning is important when applying mutation testing, where individual tests need to demonstrate differences in program behavior between a program and specific artificial defects (mutants). In this paper, we evaluate whether Scientific Debugging, which has been shown to help LLMs when debugging, can also help them to generate tests for mutants. In the resulting approach, LLMs form hypotheses about how to kill specific mutants, and then iteratively generate and refine tests until they succeed, all with detailed explanations for each step. We compare this method to three baselines: (1) directly asking the LLM to generate tests, (2) repeatedly querying the LLM when tests fail, and (3) 1_search-based test generation with Pynguin. Our experiments evaluate these methods based on several factors, including mutation score, code coverage, success rate, and the ability to identify equivalent mutants. The results demonstrate that LLMs, although requiring higher computational cost, consistently outperform Pynguin in generating tests with better fault detection and coverage. Importantly, we observe that the iterative refinement of test cases is important for achieving high-quality test suites.},
+  keywords={Codes;Costs;Large language models;Fault detection;Computational modeling;Debugging;Software;Cognition;Test pattern generators;Iterative methods;Large Language Models;Test Generation;Mutation Testing;Scientific Debugging},
+  doi={10.1109/ICSTW64639.2025.10962485},
+  ISSN={2159-4848},
+  month={March}
+}
+
+@INPROCEEDINGS{11126137,
+  author={Uddin, Md Arfan},
+  booktitle={2025 IEEE International Conference on Service-Oriented System Engineering (SOSE)}, 
+  title={Graph-Based LLM Prompting for Scalable Microservice API Testing}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={243-244},
+  abstract={Microservices offer flexibility and scalability, but their decentralized and fast-changing nature makes it difficult to maintain consistent and meaningful test coverage, particularly at the level of service endpoints. Services are developed independently, logic is spread across multiple layers, and execution paths vary widely based on input and control flow. As a result, automated testing is hard to scale, and manual testing is time-consuming and error-prone. Recent advances in large language models present a promising opportunity for generating tests automatically. However, existing approaches often rely on providing the entire source code as input, which can exceed model limitations and include unrelated logic that reduces test quality. This paper proposes a structured approach that uses interprocedural control flow graphs to guide language models in generating accurate, maintainable endpoint tests that better reflect the complexity of modern microservice systems.},
+  keywords={Service-oriented systems engineering;Large language models;Source coding;Scalability;Microservice architectures;Static analysis;Manuals;Logic;Flow graphs;Testing;Microservice;API Testing;Test Automation;Large Language Model (LLM);Control Flow Graph (CFG);Static Analysis},
+  doi={10.1109/SOSE67019.2025.00034},
+  ISSN={2642-6587},
+  month={July}
+}
+
+@INPROCEEDINGS{11126445,
+  author={Salari, Mikael Ebrahimi and Enoiu, Eduard Paul and Bucaioni, Alessio and Afzal, Wasif and Seceleanu, Cristina},
+  booktitle={2025 IEEE 49th Annual Computers, Software, and Applications Conference (COMPSAC)}, 
+  title={PyLC+: A Scalable Python Framework for Automated Translation and Testing of Industrial PLC Programs}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={628-639},
+  abstract={As industrial PLC programs become more complex, automated testing and verification methods are needed to ensure their reliability and correctness. This paper presents PyLC+, a modular framework that translates PLC programs into Python, allowing for automated AI-driven test generation. PyLC+ builds upon our previous work, addressing limitations by adopting a class-based modular architecture that improves the tool’s scalability, maintainability, and extensibility. This structural refinement eliminates reliance on nested functions, facilitating the translation of large-scale, real-world PLC programs while maintaining precise use of cyclic execution. Furthermore, PyLC+ introduces automated handling of stateful FBs, ensuring compliance with IEC 61131-3 execution semantics.Additionally, the tool proposes integrating LLM-driven test generation with search-based test generation to improve the efficiency and effectiveness of testing PLC software. We tested PyLC+ in a large-scale company developing train control systems, demonstrating its efficiency and effectiveness in handling complex industrial PLC programs.},
+  keywords={Translation;Scalability;Control systems;Software;Extensibility;Test pattern generators;Reliability;IEC Standards;Testing;Python;PLC;FBD;Test Automation Framework;Python;AI;LLM;Search-based Testing;PyLC+},
+  doi={10.1109/COMPSAC65507.2025.00085},
+  ISSN={2836-3795},
+  month={July}
+}
+
+@INPROCEEDINGS{11351757,
+  author={Hariharan, Mohanakrishnan and Barma, Seshu and Arvapalli, Satish and Sheela, Evangeline},
+  booktitle={2025 IEEE International Conference on Data and Software Engineering (ICoDSE)}, 
+  title={Agentic RAG for Software Testing with Hybrid Vector-Graph and Multi-Agent Orchestration}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={54-59},
+  abstract={We present an approach to automating software testing using Agentic Retrieval-Augmented Generation (RAG) systems for creating Quality Engineering (QE) artifacts. This approach combines autonomous AI agents with hybrid vector-graph knowledge systems to automate the generation of test plans and test cases. The scope of this paper is limited to the test cases and plan generation. Our approach addresses traditional software test case authoring limitations by leveraging LLMs such as Gemini and Mistral, multi-agent orchestration, and enhanced contextualization. The system achieves remarkable accuracy improvements from 65% to 94.8% while ensuring comprehensive document traceability throughout the quality engineering lifecycle. Experimental validation of enterprise Corporate Systems Engineering and SAP migration projects demonstrates an 85% reduction in testing timeline, an 85% improvement in test suite efficiency, and projected 35% cost savings, resulting in a 6-month acceleration of go-live.},
+  keywords={Software testing;Costs;Automation;Retrieval augmented generation;Knowledge based systems;Life estimation;Systems engineering and theory;Hybrid power systems;Software;Software engineering;agentic systems;retrieval-augmented generation;software testing;quality engineering;multi-agent orchestration;hybrid vector-graph;test automation;SAP testing;enterprise systems},
+  doi={10.1109/ICoDSE68111.2025.11351757},
+  ISSN={2640-0227},
+  month={Oct}
+}
+
+@INPROCEEDINGS{10989041,
+  author={Yoon, Juyeon and Kim, Seah and Kim, Somin and Jung, Sukchul and Yoo, Shin},
+  booktitle={2025 IEEE Conference on Software Testing, Verification and Validation (ICST)}, 
+  title={Integrating LLM-Based Text Generation with Dynamic Context Retrieval for GUI Testing}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={394-405},
+  abstract={Automated GUI testing plays a crucial role for smartphone vendors who have to ensure that the widely used mobile apps-that are not essentially developed by the vendors-are compatible with new devices and system updates. While existing testing techniques can automatically generate event sequences to reach different GUI views, inputs such as strings and numbers remain difficult to generate, as their generation often involves semantic understanding of the app functionality. Recently, Large Language Models (LLMs) have been successfully adopted to generate string inputs that are semantically relevant to the test case. This paper evaluates the LLM-based input generation in the industrial context of vendor testing of both in-house and 3rd party mobile apps. We present DROIDFILLER, an LLM based input generation technique that builds upon existing work with more sophisticated prompt engineering and customisable context retrieval. DROIDFILLER is empirically evaluated using a total of 120 textfields collected from a total of 45 apps, including both in-house and 3rd party ones. The results show that DROIDFILLER can outperform both vanilla LLM based input generation as well as the existing resource pool approach. We integrate DROIDFILLER into the existing GUI testing framework used at Samsung, evaluate its performance, and discuss the challenges and considerations for practical adoption of LLM-based input generation in the industry.},
+  keywords={Software testing;Industries;Automation;Accuracy;Large language models;Semantics;Mobile applications;Prompt engineering;Testing;Graphical user interfaces;GUI Testing;Large Language Models;Test Automation},
+  doi={10.1109/ICST62969.2025.10989041},
+  ISSN={2159-4848},
+  month={March}
+}
+
+@INPROCEEDINGS{11334450,
+  author={Li, Chengpeng and Behrang, Farnaz and Shi, August and Liu, Peng},
+  booktitle={2025 40th IEEE/ACM International Conference on Automated Software Engineering (ASE)}, 
+  title={FlakyGuard: Automatically Fixing Flaky Tests at Industry Scale}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={2158-2170},
+  abstract={Flaky tests that non-deterministically pass or fail waste developer time and slow release cycles. While large language models (LLMs) show promise for automatically repairing flaky tests, existing approaches like FlakyDoctor fail in industrial settings due to the context problem: providing either too little context (missing critical production code) or too much context (overwhelming the LLM with irrelevant information). We present FlakyGuard, which addresses this problem by treating code as a graph structure and using selective graph exploration to find only the most relevant context. Evaluation on real-world flaky tests from industrial repositories shows that FlakyGuard repairs 47.6% of reproducible flaky tests with 51.8% of the fixes accepted by developers. Besides it outperforms state-of-the-art approaches by at least 22% in repair success rate. Developer surveys confirm that 100% find FlakyGuard’s root cause explanations useful.},
+  keywords={Surveys;Industries;Codes;Accuracy;Autonomous systems;Large language models;Production;Maintenance engineering;Software engineering;Software development management},
+  doi={10.1109/ASE63991.2025.00179},
+  ISSN={2643-1572},
+  month={Nov}
+}
+
+@INPROCEEDINGS{11121730,
+  author={Vajjala, Ajay Krishna and Vajjala, Arun Krishna and Badea, Carmen and Bird, Christian and D'Souza, Jade and DeLine, Robert and Demyanyuk, Mikhail and Entenmann, Jason and Forsgren, Nicole and Hramadski, Aliaksandr and Mohammad, Haris and Sanyal, Sandeepan and Surmachev, Oleg and Zimmermann, Thomas},
+  booktitle={2025 IEEE/ACM 47th International Conference on Software Engineering: Software Engineering in Practice (ICSE-SEIP)}, 
+  title={Enhancing Differential Testing: LLM-Powered Automation in Release Engineering}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={607-617},
+  abstract={In modern software engineering, efficient release engineering workflows are essential for quickly delivering new features to production. This not only improves company productivity but also provides customers with frequent updates, which can lead to increased profits. At Microsoft, we collaborated with the Identity and Network Access (IDNA) team to automate their release engineering workflows. They use differential testing to classify differences between test and production environments, which helps them assess how new changes perform with real-world traffic before pushing updates to production. This process enhances resiliency and ensures robust changes to the system. However, on-call engineers (OCEs) must manually label hundreds or thousands of behavior differences, which is time-consuming. In this work, we present a method leveraging Large Language Models (LLMs) to automate the classification of these differences, which saves OCEs a significant amount time. Our experiments demonstrate that LLMs are effective classifiers for automating the task of behavior difference classification, which can lead to speeding up release workflows, and improved OCE productivity.},
+  keywords={Productivity;Release engineering;Automation;Large language models;Companies;Testing;Resilience;Differential Testing;Release Engineering;Large Language Models;Classification},
+  doi={10.1109/ICSE-SEIP66354.2025.00059},
+  ISSN={2832-7659},
+  month={April}
+}
+
+@ARTICLE{10977824,
+  author={Tip, Frank and Bell, Jonathan and Schäfer, Max},
+  journal={IEEE Transactions on Software Engineering}, 
+  title={LLMorpheus: Mutation Testing Using Large Language Models}, 
+  year={2025},
+  volume={51},
+  number={6},
+  pages={1645-1665},
+  abstract={In mutation testing, the quality of a test suite is evaluated by introducing faults into a program and determining whether the program’s tests detect them. Most existing approaches for mutation testing involve the application of a fixed set of mutation operators, e.g., replacing a “+” with a “-”, or removing a function’s body. However, certain types of real-world bugs cannot easily be simulated by such approaches, limiting their effectiveness. This paper presents a technique for mutation testing where placeholders are introduced at designated locations in a program’s source code and where a Large Language Model (LLM) is prompted to ask what they could be replaced with. The technique is implemented in LLMorpheus, a mutation testing tool for JavaScript, and evaluated on 13 subject packages, considering several variations on the prompting strategy, and using several LLMs. We find LLMorpheus to be capable of producing mutants that resemble existing bugs that cannot be produced by StrykerJS, a state-of-the-art mutation testing tool. Moreover, we report on the running time, cost, and number of mutants produced by LLMorpheus, demonstrating its practicality.},
+  keywords={Computer bugs;Testing;Codes;Standards;Source coding;Libraries;Large language models;Costs;Training;Temperature measurement;Mutation testing;large language models},
+  doi={10.1109/TSE.2025.3562025},
+  ISSN={1939-3520},
+  month={June}
+}
+
+@INPROCEEDINGS{11351772,
+  author={Patel, Sagar B. and Nigam, Sajal and Mahale, Shrikanth},
+  booktitle={2025 IEEE International Conference on Data and Software Engineering (ICoDSE)}, 
+  title={Reverse-Engineering and Automating BDD for Modern Software Development with LLMs}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={437-442},
+  abstract={Behavior-Driven Development (BDD) frameworks like Cucumber and Behave align business requirements with executable tests but remain costly to author and maintain, especially for legacy or evolving systems [1], [2]. We present a novel LLM-driven approach, leveraging LLaMA to reverse-engineer requirements from schemas, API payloads, and partial tests to automatically generate Gherkin feature files with corresponding step definitions. Generated artifacts are drafted into automated pull requests and merged into the repositories via human review [3]. Our proposed method when tested across two enterprise systems, over six sprints, reduced authoring time by about 75%, expanded negative test coverage by 30%, and achieved cost savings ranging from $7,725 in conservative adoption to over $40,000 in high-volume adoption, maintaining infrastructure overhead costs below 3%. Beyond efficiency gains, the approach lowers barriers for teams new to BDD and demonstrates a practical, cost-effective path for industry adoption while opening avenues for research in adaptive prompting, coverage-aware generation, and retrieval-augmented workflows. [3].},
+  keywords={Industries;Software testing;Costs;Codes;Automation;Reviews;Pipelines;Natural language processing;Distance measurement;Payloads;Behavior-Driven Development (BDD);Generative AI;Gherkin;Human-in-the-Loop;Inference;Large Language Models (LLMs);Llama;Natural Language Processing (NLP);Software Testing Frameworks;Test Automation},
+  doi={10.1109/ICoDSE68111.2025.11351772},
+  ISSN={2640-0227},
+  month={Oct}
+}
+
+@INPROCEEDINGS{11334650,
+  author={Fonseca, Pedro Luís and Lima, Bruno and Faria, João Pascoal},
+  booktitle={2025 40th IEEE/ACM International Conference on Automated Software Engineering (ASE)}, 
+  title={Streamlining Acceptance Test Generation for Mobile Applications Through Large Language Models: An Industrial Case Study}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={3311-3321},
+  abstract={Mobile acceptance testing remains a bottleneck in modern software development, particularly for cross-platform mobile development using frameworks like Flutter. While developers increasingly rely on automated testing tools, creating and maintaining acceptance test artifacts still demands significant manual effort. To help tackle this issue, we introduce AToMIC, an automated framework leveraging specialized Large Language Models to generate Gherkin scenarios, Page Objects, and executable UI test scripts directly from requirements (JIRA tickets) and recent code changes. Applied to BMW’s MyBMW app, covering 13 real-world issues in a 170+ screen codebase, AToMIC produced executable test artifacts in under five minutes per feature on standard hardware. The generated artifacts were of high quality: 93.3% of Gherkin scenarios were syntactically correct upon generation, 78.8% of PageObjects ran without manual edits, and 100% of generated UI tests executed successfully. In a survey, all practitioners reported time savings (often a full developer-day per feature) and strong confidence in adopting the approach. These results confirm AToMIC as a scalable, practical solution for streamlining acceptance test creation and maintenance in industrial mobile projects.},
+  keywords={Surveys;Large language models;Manuals;Mobile applications;Maintenance;Test pattern generators;Standards;Testing;Software engineering;Software development management;Acceptance Testing;Large Language Models;Mobile Applications;Flutter;Test Case Generation;Cross-Platform Development;Gherkin;Test Automation},
+  doi={10.1109/ASE63991.2025.00273},
+  ISSN={2643-1572},
+  month={Nov}
+}
+
+@INPROCEEDINGS{11476629,
+  author={Singireddy, Srikanth and Sivagnanam, Abinaya Mettupatti and Surianarayanan, Gayathri},
+  booktitle={SoutheastCon 2026}, 
+  title={Enhancing Software Quality Engineering in Enterprise Systems Using Predictive and Generative AI}, 
+  year={2026},
+  volume={},
+  number={},
+  pages={1-6},
+  abstract={Software quality engineering is considered as a ma jor challenge for emergent enterprise systems, which is attributed to the complexity of systems and the demand for fast releases driven by dynamic distributed architecture scaling. Conventional quality assurance techniques are heavily dependent on static rulebased testing and human work in a way that is unsuitable for the changes in software behaviors and defects. Recent developments in artificial intelligence provide new ways to improve software quality processes with data-based insights and smart automation. We propose an enterprise-centric, software quality engineering improvement framework built on top of predictive analytics and generative artificial intelligence methods. This strategy uses predictive models to pinpoint at risk components and defective regions early in the design lifecycle, while generative AIs are used to automate testing case creation and validation processes. By integrating these functions into CI/CD pipeline the framework enables scalable, adaptive quality engineering for large enterprise systems. They experimentally evaluate the detection accuracy of defective code, improvement in test coverage, and efficiency of the validation by using enterprise application datasets and realworld testing situations. We show that the proposed framework increases defect prediction accuracy, automated test coverage and decreases regression testing effort as compared to traditional quality engineering methodologies. Furthermore, responsible AI concerns regarding validation checks and hallucination alleviation are taken into account to ensure dependable deployment in enterprise scenario. The results demonstrate the potential of predictive and generative AI to improve quality engineering outcomes, in large enterprise systems, with reliability, scalability, and governance removed/rewrite.},
+  keywords={Feeds;Radio broadcasting;Frequency modulation;Feedback;Circuits;Protocols;Radio access networks;Regional area networks;HTTP;Modulation;Software Quality Engineering;Predictive Analytics;Generative Artificial Intelligence;Enterprise Systems;Automated Software Testing;Defect Prediction;Continuous Integration and Delivery;Responsible AI},
+  doi={10.1109/SoutheastCon63549.2026.11476629},
+  ISSN={1558-058X},
+  month={Feb}
+}
+
+@INPROCEEDINGS{10963099,
+  author={Aarifeen, Hafsa and Wickramaarachchi, Dilani},
+  booktitle={2025 5th International Conference on Advanced Research in Computing (ICARC)}, 
+  title={Evaluating AI-Based Unit Testing Tools: A Focus on Usability, Reliability, and Integration}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-6},
+  abstract={This study presents an empirical comparison of Artificial Intelligence (AI)-based unit testing tools, focusing on their usability, reliability, and the challenges of integrating them into existing software testing frameworks. As AI-driven testing tools emerge as solutions to the limitations of traditional manual testing, particularly within agile methodologies and continuous integration/continuous deployment (CI/CD) pipelines, their effectiveness remains an area of active research. The research evaluates the potential of these tools to automate test generation and execution, thereby improving test coverage and bug detection while minimizing manual intervention. However, significant usability challenges persist, as developers often find these tools difficult to configure and deploy, especially in projects with varying complexities. Additionally, concerns about the reliability of AI-generated tests, particularly regarding consistent bug detection across different environments, are addressed. Integration into legacy systems poses further obstacles, as many organizations hesitate to overhaul established testing frameworks. The findings of this study offer insights into the current state of AI-based unit testing tools and provide recommendations for overcoming barriers to their widespread adoption in real-world development environments.},
+  keywords={Computer bugs;Focusing;Organizations;Software quality;Manuals;Software reliability;Reliability;Usability;Artificial intelligence;Testing;artificial intelligence;reliability;unit testing tools;usability;integration},
+  doi={10.1109/ICARC64760.2025.10963099},
+  ISSN={},
+  month={Feb}
+}
+
+@ARTICLE{11007529,
+  author={Altin, Mahsun and Mutlu, Behcet and Kilinc, Deniz and Cakir, Altan},
+  journal={IEEE Access}, 
+  title={Automated Testing for Service-Oriented Architecture: Leveraging Large Language Models for Enhanced Service Composition}, 
+  year={2025},
+  volume={13},
+  number={},
+  pages={89627-89640},
+  abstract={This article explores the application of Large Language Models (LLMs), including proprietary models such as OpenAI’s ChatGPT 4o and ChatGPT 4o-mini, Anthropic’s Claude 3.5 Sonnet and Claude 3.7 Sonnet, and Google’s Gemini 1.5 Pro, Gemini 2.0 Flash, and Gemini 2.0 Flash-Lite, as well as open-source alternatives including Qwen2.5-14B-Instruct-1M, and commercially accessed models such as DeepSeek R1 and DeepSeek V3, which were tested via APIs despite having open-source variants, to automate validation and verification in Application Programming Interface (API) testing within a Service-Oriented Architecture (SOA). Our system compares internal responses from the Enuygun Web Server against third-party API outputs in both JSON and XML formats, validating critical parameters such as flight prices, baggage allowances, and seat availability. We generated 100 diverse test scenarios across varying complexities (1-4 flight results) by randomly altering request and response parameters. Experimental results show that Google Gemini 2.0 Flash achieved high accuracy (up to 99.98%) with the lowest completion time (85.34 seconds), while Qwen2.5-14B-Instruct-1M exhibited limited capability in processing complex formats. Models such as OpenAI’s ChatGPT and Anthropic’s Claude Sonnet models also demonstrated strong performance in single-flight validation scenarios, making them suitable for low-latency, high-precision tasks. Our findings indicate that some open-source models can offer promising cost-effective alternatives, though performance significantly varies. This integration of LLMs reduced manual workload, improved test scalability, and enabled real-time validation across large-scale datasets. As LLM technologies mature, we anticipate further advances in automation, accuracy, and efficiency in software validation systems.},
+  keywords={Indexing;Service-oriented architecture;Software testing;Software systems;Scalability;Accuracy;Software development management;Real-time systems;Complexity theory;Software reliability;AI-driven automation;large language models;scalability in API testing;service-oriented architecture;software validation},
+  doi={10.1109/ACCESS.2025.3571994},
+  ISSN={2169-3536},
+  month={}
+}
+
+@INPROCEEDINGS{11127254,
+  author={Mani, Nariman and Attaranasl, Salma},
+  booktitle={2025 IEEE International Conference on Artificial Intelligence Testing (AITest)}, 
+  title={Enhancing Adaptive Test Healing with Graph Neural Networks for Dependency-Aware Decision Making}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={126-133},
+  abstract={Flaky tests are a major obstacle in modern CI/CD pipelines, leading to unreliable feedback, increased reruns, and developer frustration. Our previously published adaptive healing framework combined Large Language Models (LLMs) and Reinforcement Learning (RL) to automate flaky test recovery, but it assumed test independence and failed to account for structural dependencies between tests. In this paper, we introduce a significant extension to that baseline: a Graph Neural Network (GNN)-based Test Dependency Mapping layer that models intertest relationships. By integrating GNN embeddings with LLM-classified failures, the RL agent becomes dependency-aware, enabling more precise and efficient healing decisions. We evaluate the enhanced framework on a real-world industrial platform, a social lifestyle application actively used by thousands of users for health, nutrition, and coaching. Results show a 90% reduction in flaky test-related costs and faster, autonomous resolution of dependency-induced failures.},
+  keywords={Adaptive systems;Costs;Large language models;Decision making;Pipelines;Reinforcement learning;Transformers;Graph neural networks;Real-time systems;Testing;Adaptive Test Healing;Large Language Models (LLMs);GPT;Reinforcement Learning (RL);Flaky Tests;Self-Healing Test Automation;Continuous Integration (CI);Graph Neural Networks (GNN)},
+  doi={10.1109/AITest66680.2025.00023},
+  ISSN={2835-3560},
+  month={July}
+}
+
+@INPROCEEDINGS{11436286,
+  author={Singireddy, Srikanth and Sivagnanam, Abinaya Mettupatti and Surianarayanan, Gayathri},
+  booktitle={2025 IEEE International Conference on Emerging Trends in Computing and Communication (ETCOM)}, 
+  title={AI-Augmented Quality Assurance for Enterprise Software Systems}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-6},
+  abstract={The rapid growth of enterprise software ecosystems presents new challenges to quality at scale. Traditional Quality Assurance (QA) methods thatare based on manual verification and static automation tools have difficulty catching up with the speed of continuous delivery pipelines and system integrations. We propose AI-Augmented Quality Assurance (AI-QA): a framework which combines predictive analytics, generative AI and intelligent automation to improve quality, speed and reliability in an enterprise context. The proposed framework uses machine learning models to predict defective modules, utilizes large language models (LLMs) to automatically produce and improve a set of test cases, and implements feedback-driven self-learning loops to provide continuous improvement. Empirical results in a real-world enterprise setting show up to 40% % reduction in validation effort and 30% increase in defect detection efficiency, along with significant improvements in terms of regression coverage. This study describes the architecture, implementation, and performance evaluation of this AI-QA framework and what its implications are for future DevOps pipelines and digital transformation efforts.},
+  keywords={Performance evaluation;Quality assurance;DevOps;Pipelines;System integration;Predictive models;Software systems;Reliability;Predictive analytics;Testing;AI Testing;Quality Assurance;Test Automation;Predictive Analytics;Enterprise Systems;DevOps},
+  doi={10.1109/ETCOM66606.2025.11436286},
+  ISSN={},
+  month={Nov}
+}
+
+@ARTICLE{11052614,
+  author={Schmidt, Douglas C.},
+  journal={Computer}, 
+  title={Software Testing in the Generative AI Era: A Practitioner’s Playbook}, 
+  year={2025},
+  volume={58},
+  number={7},
+  pages={147-152},
+  abstract={This article presents a practitioner-focused playbook on how generative artificial intelligence is transforming software testing by automating tasks like test generation, simulation, and anomaly detection, while also introducing new challenges like hallucinations, bias, and nondeterminism.},
+  keywords={},
+  doi={10.1109/MC.2025.3562940},
+  ISSN={1558-0814},
+  month={July}
+}
+
+@INPROCEEDINGS{11166964,
+  author={Azzam, Adham and Hany, Omar and Mansour, Hesham},
+  booktitle={2025 Intelligent Methods, Systems, and Applications​ (IMSA)}, 
+  title={Comparative Study on Test Case generation using Generative AI}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={366-369},
+  abstract={Testing is an important part of Development life cycle, resource intensive and prone to human error. Over the years, various tools have been developed, with a recent surge in those based on Large Language Models (LLMs). Examples include prompting LLMs in chat applications to generate test cases or using AI agents with project context to generate tests. This paper comparatively studies the most prominent open and closed-source models available at the time of writing. This paper covers the most famous open and closed source models as of the date of writing this paper in a comparative study. This study analyzes each model’s characteristics and performance against well known metrics like average code coverage and mutation score. While closed source models Like GPT-4o are demonstrating better performance than all other models at 35.2% coverage, some open source models such as Llama 3.1 70B is demonstrating significantly p romising p erformance with 30.6% coverage, or models like DeepSeekCoderV2 16B that have a better chance of running locally in a normal home setting with 28.2% coverage. This study highlights LLM capabilities in automated test generation.},
+  keywords={Measurement;Codes;Generative AI;Large language models;Writing;Software;Test pattern generators;Surges;Faces;Testing;Large Language Model;Unit Test Generation;Comparative Study},
+  doi={10.1109/IMSA65733.2025.11166964},
+  ISSN={},
+  month={July}
+}
+
+@INPROCEEDINGS{11334271,
+  author={Karanjai, Rabimba and Xu, Lei and Shi, Weidong},
+  booktitle={2025 2nd IEEE/ACM International Conference on AI-powered Software (AIware)}, 
+  title={HPCAgentTester: a Multi-Agent LLM Approach for Enhanced HPC Unit Test Generation}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={213-222},
+  abstract={Unit testing in High-Performance Computing (HPC) is critical but challenged by parallelism, complex algorithms, and diverse hardware. Traditional methods often fail to address non-deterministic behavior and synchronization issues in HPC applications. This paper introduces HPCAgentTester, a novel multi-agent Large Language Model (LLM) framework designed to automate and enhance unit test generation for HPC software utilizing OpenMP and MPI. HPCAgentTester employs a unique collaborative workflow where specialized LLM agents (Recipe Agent and Test Agent) iteratively generate and refine test cases through a critique loop. This architecture enables the generation of context-aware unit tests that specifically target parallel execution constructs, complex communication patterns, and hierarchical parallelism. We demonstrate HPCAgentTester's ability to produce compilable and functionally correct tests for OpenMP and MPI primitives, effectively identifying subtle bugs that are often missed by conventional techniques. Our evaluation shows that HPCAgentTester significantly improves test compilation rates and correctness compared to standalone LLMs, offering a more robust and scalable solution for ensuring the reliability of parallel software systems.},
+  keywords={Large language models;Software algorithms;Collaboration;Parallel processing;Software systems;Hardware;Software reliability;Test pattern generators;Synchronization;Testing;HPC;Large Language Models;MPI;MultiAgent Systems;OpenMP;Parallel Programming;Test Generation;Unit Testing},
+  doi={10.1109/AIware69974.2025.00031},
+  ISSN={},
+  month={Nov}
+}
+
+@INPROCEEDINGS{11342080,
+  author={Kanagaraj, Kanaganandini and Handa, Devansh and Nikhil, Kindi Krishna and Duvarakanath, S. and M., Supriya},
+  booktitle={2025 2nd International Conference on Software, Systems and Information Technology (SSITCON)}, 
+  title={LLM-Driven Smart Test Case Generation for Scalable Software Testing}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-6},
+  abstract={Software testing is vital to modern development; however, traditional test case generation remains limited by imprecision, heavy manual intervention, and a lack of scalability. This study proposes a robust framework that integrates Large Language Models (LLMs) with multi-agent systems to generate fully automated, end-to-end test cases. By combining Deep Learning with Chain-of-Thought reasoning, the framework intelligently analyzes back-end APIs and front-end UIs, producing context-aware and comprehensive test suites. The evaluation of the system demonstrated a high-test success rate of 91.6 % and an average code coverage of 85.3 % in diverse applications. This study offers a much greater degree of adaptability to new requirements with minimal intervention while maintaining high reliability and performance qualities. These facts make it attractive for enterprise environments, where it can speed up testing with much greater precision, scaling, and enterprise readiness. Hence, the framework stands for an end-to-end solution for next-generation regression automation.},
+  keywords={Software testing;System testing;Codes;Automation;Manuals;Software systems;Software reliability;Stakeholders;Multi-agent systems;Software development management;LLM;Multi-Agent Systems;Testcase Generation;System Testing;CI/CD},
+  doi={10.1109/SSITCON66133.2025.11342080},
+  ISSN={},
+  month={Oct}
+}
+
+@ARTICLE{11411685,
+  author={Sisomboon, Wantana and Kaewyotha, Jakkrit and Songpan, Wararat},
+  journal={IEEE Access}, 
+  title={Automated Software Test Case Generation Using Directional Partially Weighted Ensemble Large Language Models With Retrieval-Augmented Generation (RAG)}, 
+  year={2026},
+  volume={14},
+  number={},
+  pages={31124-31145},
+  abstract={Ensuring software quality relies on testing practices that can reliably confirm whether delivered systems meet user requirements. While Acceptance Test-Driven Development (ATDD) encourages early collaboration between stakeholders and developers, creating comprehensive acceptance test cases remains a human task that heavily depends on domain expertise. Recent progress in Large Language Models (LLMs) has made automated test case generation feasible. However, approaches based on a single model often suffer from performance instability, uneven test coverage, and a limited ability to generalize across heterogeneous requirements. This study proposes an automated test case generation framework that combines directional partially weighted ensemble large language models (LLMs) with Retrieval-Augmented Generation (RAG). The framework assigns model influence dynamically according to directional performance trends and degrees of partial correctness and consolidates candidate outputs through a weighted majority-voting mechanism and cross-validation conducted over multiple folds. Five state-of-the-art LLMs, Claude, ChatGPT, Gemini, Qwen, and Mistral, were evaluated using 16 criteria derived from four widely adopted closed box testing techniques: Boundary Value Analysis, Equivalence Partitioning, Use Case testing, and State Transition testing. Under the evaluated experimental conditions, the proposed framework achieved 98.44% test coverage, indicating complete consistency with the defined gold-standard acceptance criteria. Cross-validation results further demonstrate improved robustness, stronger generalization to previously unseen requirements, and linear scalability, supporting practical deployment in real-world software development environments, and complexity analysis to confirm linear throughout growth (O(n)), which supports efficient deployment under increasing workloads.},
+  keywords={Testing;Retrieval augmented generation;Software testing;Large language models;Closed box;Test pattern generators;Collaboration;Chatbots;Stakeholders;Software reliability;LLM;RAG;weighted ensemble;directional partially;test coverage;ATDD;automated software testing},
+  doi={10.1109/ACCESS.2026.3667925},
+  ISSN={2169-3536},
+  month={}
+}
+
+@INPROCEEDINGS{10589904,
+  author={Karmarkar, Hrishikesh and Agrawal, Supriya and Chauhan, Avriti and Shete, Pranav},
+  booktitle={2024 IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER)}, 
+  title={Navigating Confidentiality in Test Automation: A Case Study in LLM Driven Test Data Generation}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={337-348},
+  abstract={In out sourced industrial projects for testing of web applications, often neither the application to be tested, nor its source code are provided to the testing team, due to confidentiality reasons, making systematic testing of these applications very challenging. However, textual descriptions of such systems are often available. So, one can consider leveraging a Large Language Model (LLM) to parse these descriptions and synthesize test generators (programs that produce test data). In our experience, LLM synthesized test generators suffer from two problems:- (1) unsound: the generators might produce invalid data and (2) incomplete: the generators typically fail to generate all expected valid inputs. To mitigate these problems, we introduce TestRefineGen a method for autonomously generating test data from textual descriptions. TestRe-fineGen begins by invoking an LLM to parse a given corpus of documents and produce multiple test gener-ators. It then uses a novel ranking approach to identify generators that can produce invalid test data, and then automatically repairs them using a counterexample-guided refinement process. Lastly, TestRefineGen per-forms a generalization procedure that offsets synthesis or refinements that leads to incompleteness, to obtain generators that produce more comprehensive valid in-puts. We evaluated the effectiveness of TestRefineGen on a manually curated set of 256 textual descriptions of test data. TestRefineGen synthesized generators that produce valid test data for 66.01 % of the descriptions. Using a combination of post-processing sanitisation and refinement it was able to successfully repair synthesized generators, which improved the success rate to 76.95 %. Further, our statistical analysis on a small subset of synthesized generators shows that TestRefineGen is able to generate test data that is well distributed across the input space. Thus, TestRefineGen can be an effective technique for autonomous test data generation for web testing in projects with confidentiality concerns.},
+  keywords={Costs;Systematics;Statistical analysis;Navigation;Source coding;Maintenance engineering;Packaging;automated test input generation;testing;refinement;Large Language Models},
+  doi={10.1109/SANER60148.2024.00041},
+  ISSN={2640-7574},
+  month={March}
+}
+
+@INPROCEEDINGS{11081451,
+  author={Ferreira, Margarida and Viegas, Luís and Faria, João Pascoal and Lima, Bruno},
+  booktitle={2025 IEEE/ACM International Conference on Automation of Software Test (AST)}, 
+  title={Acceptance Test Generation with Large Language Models: An Industrial Case Study}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-11},
+  abstract={Large language model (LLM)-powered assistants are increasingly used for generating program code and unit tests, but their application in acceptance testing remains underexplored. To help address this gap, this paper explores the use of LLMs for generating executable acceptance tests for web applications through a two-step process: (i) generating acceptance test scenarios in natural language (in Gherkin) from user stories, and (ii) converting these scenarios into executable test scripts (in Cypress), knowing the HTML code of the pages under test. This two-step approach supports acceptance test-driven development, enhances tester control, and improves test quality. The two steps were implemented in the AutoUAT and Test Flow tools, respectively, powered by GPT-4 Turbo, and integrated into a partner company’s workflow and evaluated on real-world projects. The users found the acceptance test scenarios generated by AutoUAT helpful 95% of the time, even revealing previously overlooked cases. Regarding Test Flow, 92% of the acceptance test cases generated by Test Flow were considered helpful: 60% were usable as generated, 8% required minor fixes, and 24% needed to be regenerated with additional inputs; the remaining 8% were discarded due to major issues. These results suggest that LLMs can, in fact, help improve the acceptance test process, with appropriate tooling and supervision.},
+  keywords={Costs;Codes;Automation;Accuracy;Large language models;Natural languages;Software;Test pattern generators;Usability;Testing;Acceptance Testing;Large Language Models;Automatic Test Generation;Web Application Testing},
+  doi={10.1109/AST66626.2025.00007},
+  ISSN={2833-9061},
+  month={April}
+}
+
+@INPROCEEDINGS{11395666,
+  author={Mavani, Vatsal Kishorbhai},
+  booktitle={2026 IEEE 5th International Conference on AI in Cybersecurity (ICAIC)}, 
+  title={Codebase Aware Generative Agents for the SDLC: Automating Documentation, Dependency Analysis and Test Generation}, 
+  year={2026},
+  volume={},
+  number={},
+  pages={1-4},
+  abstract={Autonomous agents are becoming common in software development, but they often struggle to maintain context in large, changing codebases. To solve this, we propose CA-SAF (Codebase-Aware Self-Adapting Framework), a multi-agent system designed to fix this architectural "blindness" by actively retrieving precise code details. Our core innovation is ZSDM (Zero-Shot Dependency Mapping). This hybrid method combines AST parsing with strict LLM extraction to map every entity and relationship into a queryable Knowledge Graph. By using structured code summaries, we achieved roughly 80% data compression, ensuring the context remains efficient. We benchmarked the system against GPT-4o, LLaMA 3.1, and Claude 3 Opus. We found that Claude 3 Opus, with its 200,000 - token window, slightly outperformed the others (capped at 128,000) on complex, non-local mapping tasks. Over a six-month operational study, using CA-SAF led to a measurable drop in both Cycle Time and Lead Time for maintenance work. Crucially, the framework used this codebase awareness to balance speed with quality, actively reducing the number of critical bugs that high-speed LLM generation often introduces.},
+  keywords={Codes;Knowledge graphs;Autonomous agents;Time measurement;Windows;Maintenance;Complexity theory;Test pattern generators;Software development management;Multi-agent systems;Generative AI;Autonomous Agents;Software Development Life Cycle (SDLC);Knowledge Graph;Retrieval-Augmented Generation (RAG);Zero-Shot Dependency Mapping;Technical Debt},
+  doi={10.1109/ICAIC67076.2026.11395666},
+  ISSN={},
+  month={Feb}
+}
+
+@INPROCEEDINGS{11190124,
+  author={Magalhaes, Cleyton and Santos, Italo and Stuart-Verner, Brody and De Souza Santos, Ronnie},
+  booktitle={2025 IEEE International Conference on Source Code Analysis & Manipulation (SCAM)}, 
+  title={Testing the Untestable? An Empirical Study on the Testing Process of LLM-Powered Software Systems}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={78-88},
+  abstract={Background: Software systems powered by large language models are becoming a routine part of everyday technologies, supporting applications across a wide range of domains. In software engineering, many studies have focused on how LLMs support tasks such as code generation, debugging, and documentation. However, there has been limited focus on how full systems that integrate LLMs are tested during development. Aims: This study explores how LLM-powered systems are tested in the context of real-world application development. Method: We conducted an exploratory case study using 99 individual reports written by students who built and deployed LLM-powered applications as part of a university course. Each report was independently analyzed using thematic analysis, supported by a structured coding process. Results: Testing strategies combined manual and automated methods to evaluate both system logic and model behavior. Common practices included exploratory testing, unit testing, and prompt iteration. Reported challenges included integration failures, unpredictable outputs, prompt sensitivity, hallucinations, and uncertainty about correctness. Conclusions: Testing LLM-powered systems required adaptations to traditional verification methods, blending source-level reasoning with behavior-aware evaluations. These findings provide evidence on the practical context of testing generative components in software systems.},
+  keywords={Codes;Sensitivity;Uncertainty;Large language models;Manuals;System integration;Software systems;Cognition;Logic;Testing;LLMs;software testing;guidelines},
+  doi={10.1109/SCAM67354.2025.00015},
+  ISSN={2470-6892},
+  month={Sep.}
+}
+
+@ARTICLE{11363193,
+  author={Barathidass, Charles and Namburu, Karthik},
+  journal={IEEE Access}, 
+  title={Rapid End-to-End Test Generation and Hallucination Mitigation Using Generative Artificial Intelligence}, 
+  year={2026},
+  volume={14},
+  number={},
+  pages={20605-20619},
+  abstract={End-to-end testing of distributed systems remains constrained by rapidly evolving architectures and maintenance requirements. Previous template-based solutions required months of engineering effort and lacked scalability owing to Document Object Model (DOM) selector fragility. This study proposes a novel single-shot testing methodology using abstract-class-based DOM referencing combined with operation-specific prompt templates for Create, Read, Update, and Delete workflows. In contrast to conventional chain-of-thought prompting, which requires multiple iterations, our approach eliminates complex reasoning chains while standardizing large language model outputs through structured abstraction layers. Empirical validation across 15 services generated over 900 test cases, reducing the manual effort from weeks to approximately 4 h per service while achieving 80%–90% accuracy. In addition, error analysis revealed typical distributions, with the most frequent failures being the selector mismatches and the absent assertions. The framework was implemented by a single engineer in one week, compared to the months required for template-based systems. This methodology advances automated quality assurance and test case generation by balancing abstraction and specificity for rapid baseline coverage in cloud-native environments. This verification shows the scalability of the methodology and the versatility of the approach in many enterprise situations, including the foundation of future benchmarking as well as adaptive abstraction methodologies.},
+  keywords={Unified modeling language;Test pattern generators;Testing;Cognition;Manuals;Adaptation models;Accuracy;Prompt engineering;Natural language processing;Automation;Chain-of-thought prompting;end-to-end test automation;generative artificial intelligence;hallucination mitigation;large language model;prompt engineering;quality assurance;software testing;template-based test generation;test case generation},
+  doi={10.1109/ACCESS.2026.3657407},
+  ISSN={2169-3536},
+  month={}
+}
+
+@INPROCEEDINGS{11334393,
+  author={Yang, Yuhao and Zhou, Chijin and Wang, Runzhe and Zhang, Weibo and Shen, Yuheng and Shi, Xiaohai and Ma, Tao and Gao, Chang and Wang, Zhe and Fu, Ying and Shi, Heyuan},
+  booktitle={2025 40th IEEE/ACM International Conference on Automated Software Engineering (ASE)}, 
+  title={LLM-assisted Industrial-Scale Differential Testing of Package Incompatibilities in Linux Distributions}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={3546-3556},
+  abstract={An open source Linux distribution often undergoes version upgrades and migrations, which is prone to incompatibility issues especially when it comes to large-scale software changes. Although differential testing has been widely used in software testing, it is still challenging to apply it for detecting such incompatibilities in the context of industrial settings. In this paper, we report our experience in leveraging LLMs to address the challenges faced by the Linux distribution community. Specifically, we develop an LLM-based differential testing method called Versify to assist maintainers of Linux distributions in locating incompatibilities during version upgrades and migrations. Its trial operation period within the Linux distribution community shows that it uncovered 8,489 instances of differing behavior, of which 644 were prioritized for attention by developers. After deduplication and filtering, 39 unique compatibility reports were identified. Feedback from Linux distributions developers indicates that our reports have provided valuable recommendations for package selection in future OS releases.},
+  keywords={Software testing;Measurement;Industries;Filtering;Software packages;Linux;Large language models;Testing;Software engineering;Context modeling;Differential Testing;Software Test;Large Language Model;Linux Distribution},
+  doi={10.1109/ASE63991.2025.00293},
+  ISSN={2643-1572},
+  month={Nov}
+}
+
+@ARTICLE{10697930,
+  author={Pan, Rongqi and Ghaleb, Taher A. and Briand, Lionel C.},
+  journal={IEEE Transactions on Software Engineering}, 
+  title={LTM: Scalable and Black-Box Similarity-Based Test Suite Minimization Based on Language Models}, 
+  year={2024},
+  volume={50},
+  number={11},
+  pages={3053-3070},
+  abstract={Test suites tend to grow when software evolves, making it often infeasible to execute all test cases with the allocated testing budgets, especially for large software systems. Test suite minimization (TSM) is employed to improve the efficiency of software testing by removing redundant test cases, thus reducing testing time and resources while maintaining the fault detection capability of the test suite. Most existing TSM approaches rely on code coverage (white-box) or model-based features, which are not always available to test engineers. Recent TSM approaches that rely only on test code (black-box) have been proposed, such as ATM and FAST-R. The former yields higher fault detection rates (FDR) while the latter is faster. To address scalability while retaining a high FDR, we propose LTM (Language model-based Test suite Minimization), a novel, scalable, and black-box similarity-based TSM approach based on large language models (LLMs), which is the first application of LLMs in the context of TSM. To support similarity measurement using test method embeddings, we investigate five different pre-trained language models: CodeBERT, GraphCodeBERT, UniXcoder, StarEncoder, and CodeLlama, on which we compute two similarity measures: Cosine Similarity and Euclidean Distance. Our goal is to find similarity measures that are not only computationally more efficient but can also better guide a Genetic Algorithm (GA), which is used to 1_search for optimal minimized test suites, thus reducing the overall 1_search time. Experimental results show that the best configuration of LTM (UniXcoder/Cosine) outperforms ATM in three aspects: (a) achieving a slightly greater saving rate of testing time ($41.72\%$41.72% versus $41.02\%$41.02%, on average); (b) attaining a significantly higher fault detection rate ($0.84$0.84 versus $0.81$0.81, on average); and, most importantly, (c) minimizing test suites nearly five times faster on average, with higher gains for larger test suites and systems, thus achieving much higher scalability.},
+  keywords={Minimization;Codes;Fault detection;Closed box;Scalability;Time measurement;Genetic algorithms;Source coding;Vectors;Unified modeling language;Test suite minimization;test suite reduction;pre-trained language models;genetic algorithm;black-box testing},
+  doi={10.1109/TSE.2024.3469582},
+  ISSN={1939-3520},
+  month={Nov}
+}

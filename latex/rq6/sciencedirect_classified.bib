@@ -1,0 +1,98 @@
+@article{PADURARU20242459,
+title = {LLM-based methods for the creation of unit tests in game development},
+journal = {Procedia Computer Science},
+volume = {246},
+pages = {2459-2468},
+year = {2024},
+note = {28th International Conference on Knowledge Based and Intelligent information and Engineering Systems (KES 2024)},
+issn = {1877-0509},
+doi = {https://doi.org/10.1016/j.procs.2024.09.473},
+url = {https://www.sciencedirect.com/science/article/pii/S1877050924025158},
+author = {Ciprian Paduraru and Adelina Staicu and Alin Stefanescu},
+keywords = {Large language models, fine-tuning, game development, unit tests},
+abstract = {Problems related to the quality of games, whether on the initial release or after updates, can lead to player dissatisfaction, media attention, and potential financial setbacks. These issues can stem from software bugs, performance bottlenecks, or security vulnerabilities. Despite these challenges, game developers often rely on manual playtesting, highlighting the need for more robust and automated processes in game development. This research explores the application of Large Language Models (LLMs) to automate the creation of unit tests in game development, focusing on strongly typed programming languages such as C++ and C#, which are widely used in the industry. The study focuses on fine-tuning Code Llama, an advanced code generation model, to address common scenarios in game development, including game engines and specific APIs or backends. Although the prototyping and evaluations primarily took place within the Unity game engine, the proposed methods can be adapted to other internal or publicly available solutions. The evaluation results demonstrate these methods’ effectiveness in improving existing unit test suites or automatically generating new tests based on natural language descriptions of class contexts and targeted methods.}
+}
+
+@article{QIU2026107948,
+title = {Boosting unit test generation via structure-aware fine-tuning of pre-trained model},
+journal = {Information and Software Technology},
+volume = {190},
+pages = {107948},
+year = {2026},
+issn = {0950-5849},
+doi = {https://doi.org/10.1016/j.infsof.2025.107948},
+url = {https://www.sciencedirect.com/science/article/pii/S0950584925002873},
+author = {Shaojian Qiu and Weibiao Chen and Haiyang Liu and Shaosheng Wang and Han Huang},
+keywords = {Unit test generation, Pre-trained models, Structure-aware, Fine-tuning},
+abstract = {Context:
+Traditional pre-trained model for unit test generation often overlook structural code information during model fine-tuning, which limits the syntactic and semantic quality of generated test cases.
+Objective:
+This study aims to enhance the effectiveness of generating test cases by incorporating structural code representations into the fine-tuning process of pre-trained models.
+Methods:
+We propose Structure-Aware Fine-Tuning for Unit Test Generation (SF-UTG), an approach that integrates abstract syntax trees and data flow graphs into the fine-tuning phase of pre-trained model. By encoding hierarchical syntax and semantic dependencies, SF-UTG enables more structurally informed test generation.
+Results:
+Experiments on Defects4J and Methods2Test show that SF-UTG consistently outperforms baseline models. SF-UTG improves Compile Rate by 7.21%, Line Coverage by 2.05%, and Mutation Score by 2.01%, reflecting better syntactic correctness and fault detection. Its Parse Rate is within 2.54% of GPT-4, demonstrating strong test case validity. These results confirm SF-UTG’s effectiveness in generating accurate and reliable unit tests for real-world applications.
+Conclusion:
+The results validate the effectiveness of integrating AST and DFG structural information in fine-tuning and show that SF-UTG can be extended to other pre-trained models to further improve automated test generation.}
+}
+
+@article{ALAGARSAMY2024107565,
+title = {A3Test: Assertion-Augmented Automated Test case generation},
+journal = {Information and Software Technology},
+volume = {176},
+pages = {107565},
+year = {2024},
+issn = {0950-5849},
+doi = {https://doi.org/10.1016/j.infsof.2024.107565},
+url = {https://www.sciencedirect.com/science/article/pii/S0950584924001708},
+author = {Saranya Alagarsamy and Chakkrit Tantithamthavorn and Aldeida Aleti},
+keywords = {Test case generation, Deep learning},
+abstract = {Context:
+Test case generation is a critical yet challenging task in software development. Recently, AthenaTest – a Deep Learning (DL) approach for generating unit test cases has been proposed. However, our revisiting study reveals that AthenaTest can generate less than one-fifth of the test cases correctly, due to a lack of assertion knowledge and test signature verification.
+Objective:
+This paper introduces A3Test, a novel DL-based approach to the generation of test cases, enhanced with assertion knowledge and a mechanism to verify consistency of the name and signatures of the tests. A3Test aims to adapt domain knowledge from assertion generation to test case generation.
+Method:
+A3Test employs domain adaptation principles and introduces a verification approach to name consistency and test signatures. We evaluate its effectiveness using 5,278 focal methods from the Defects4j dataset.
+Results:
+Our findings indicate that A3Test outperforms AthenaTest and ChatUniTest. A3Test generates 2.16% to 395.43% more correct test cases, achieves 2.17% to 34.29% higher method coverage, and 25.64% higher line coverage. A3Test achieves 2.13% to 12.20% higher branch coverage, 2.22% to 12.20% higher mutation scores, and 2.44% to 55.56% more correct assertions compared to both ChatUniTest and AthenaTest respectively for one iteration. When generating multiple test cases per method A3Test still shows improvements and comparable efficacy to ChatUnitTest. A survey of developers reveals that the majority of the participants 70.51% agree that test cases generated by A3Test are more readable than those generated by EvoSuite.
+Conclusions:
+A3Test significantly enhances test case generation through its incorporation of assertion knowledge and test signature verification, contributing to the generation of correct test cases.}
+}
+
+@article{CHEN2026108142,
+title = {A survey of unit test case generation methods},
+journal = {Information and Software Technology},
+volume = {196},
+pages = {108142},
+year = {2026},
+issn = {0950-5849},
+doi = {https://doi.org/10.1016/j.infsof.2026.108142},
+url = {https://www.sciencedirect.com/science/article/pii/S095058492600131X},
+author = {Yao Chen and Ningwei Zhang and Zhao Jin and Yizhe Luo and Yucheng Shi and Shuo Feng and Mingliang Xu},
+keywords = {Unit testing, Test case generation, Search-based algorithms, Deep learning, Large language models, Systematic literature review},
+abstract = {Context:
+Unit testing plays a vital role in the software development process. However, manually creating unit test cases is tedious and error-prone, making automated generation a persistent research focus. Various approaches have been proposed, but each has its own strengths and limitations.
+Objectives:
+This paper systematically reviews recent advances in automated unit test case generation over the past five years. It aims to statistically analyze the research trends of various methodologies, summarize the enhancements and technical specifics of mainstream techniques, with particular emphasis on search-based and deep learning-based approaches, and identify key challenges from multiple perspectives, ultimately proposing promising directions for future research.
+Methods:
+We collected 171 relevant papers published in the last five years, conducted a quantitative analysis, and selected 67 high-quality studies for detailed assessment.
+Results:
+We found that, over the past five years, search-based methods have received the most research attention, accounting for approximately 54% of the analyzed studies. Since 2023, approaches based on large language models (LLMs) have emerged and quickly gained popularity, representing about 24% of the studies. Some approaches that combine search-based methods with LLMs have achieved better results, showing a growing trend toward combining multiple techniques.
+Conclusion:
+Although automated unit test case generation has made substantial advances, challenges remain in test quality, execution efficiency, and real-world applicability. Future research could continue exploring innovations in generation methods and performance optimization, for example, by leveraging the semantic understanding capabilities of LLMs to mitigate the limitations of search-based, symbolic execution, and similar methods, or by combining multiple methods to fully exploit the advantages of each approach. In addition, evaluating test generation methods across a broader range of programming languages is essential to better assess their generalizability.}
+}
+
+@article{CIRKOVIC20254409,
+title = {Utilizing Fine-Tuning of Large Language Models for Generating Synthetic Payloads: Enhancing Web Application Cybersecurity through Innovative Penetration Testing Techniques},
+journal = {Computers, Materials and Continua},
+volume = {82},
+number = {3},
+pages = {4409-4430},
+year = {2025},
+issn = {1546-2218},
+doi = {https://doi.org/10.32604/cmc.2025.059696},
+url = {https://www.sciencedirect.com/science/article/pii/S1546221825002401},
+author = {Stefan Ćirković and Vladimir Mladenović and Siniša Tomić and Dalibor Drljača and Olga Ristić},
+keywords = {LLM, GPT-2, XSS, SQL injection, command injection, evaluation loss perplexity},
+abstract = {With the increasing use of web applications, challenges in the field of cybersecurity are becoming more complex. This paper explores the application of fine-tuned large language models (LLMs) for the automatic generation of synthetic attacks, including XSS (Cross-Site Scripting), SQL Injections, and Command Injections. A web application has been developed that allows penetration testers to quickly generate high-quality payloads without the need for in-depth knowledge of artificial intelligence. The fine-tuned language model demonstrates the capability to produce synthetic payloads that closely resemble real-world attacks. This approach not only improves the model’s precision and dependability but also serves as a practical resource for cybersecurity professionals to enhance the security of web applications. The methodology and structured implementation underscore the importance and potential of advanced language models in cybersecurity, illustrating their effectiveness in generating high-quality synthetic data for penetration testing purposes. The research results demonstrate that this approach enables the identification of vulnerabilities that traditional methods may not uncover, providing deeper insights into potential threats and enhancing overall security measures. The performance evaluation of the model indicated satisfactory results, while further hyperparameter optimization could improve accuracy and generalization capabilities. This research represents a significant step forward in improving web application security and opens new opportunities for the use of LLMs in security testing, thereby contributing to the development of more effective cybersecurity strategies.}
+}
