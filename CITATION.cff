@@ -5,9 +5,10 @@ title: "Automated Test Generation with Large Language Models: A Systematic Mappi
 abstract: >-
   Replication package of a systematic mapping study on the use of Large
   Language Models (LLMs) for automated test generation. It contains the
-  search results, screening steps (title/abstract, exclusion, inclusion),
-  classification, codebook, and consolidated data for 618 studies selected
-  from 8,895 records published between January 2021 and May 2026.
+  complete reference lists, as BibTeX files split by source database, for
+  each of the twelve research questions, covering 618 studies selected
+  from 8,895 records published between January 2021 and May 2026, plus
+  the source files for the figures in the paper.
 authors:
   - family-names: Cunha
     given-names: Hugo

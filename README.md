@@ -103,7 +103,7 @@ and the original studies listed in the `.bib` files.
 
 ## License
 
-This material is provided for academic research purposes.
+This material is licensed under the [Creative Commons Attribution 4.0 International License (CC BY 4.0)](LICENSE).
 
 ## Contact
 
