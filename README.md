@@ -1,5 +1,7 @@
 # Automated Test Generation with LLMs: A Systematic Mapping Study
 
+[![DOI](https://zenodo.org/badge/1104347779.svg)](https://doi.org/10.5281/zenodo.24162864)
+
 Supplementary material for the systematic mapping study *Automated Test Generation with LLMs*.
 It holds the full list of references mapped to each research question (RQ) and the source files for the figures
 in the paper.

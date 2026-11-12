@@ -25,6 +25,7 @@ authors:
     email: marcelo.maia@ufu.br
     orcid: "https://orcid.org/0000-0003-3578-1380"
     affiliation: "Faculty of Computing, Federal University of Uberlândia"
+doi: 10.5281/zenodo.24162864
 license: CC-BY-4.0
 repository-code: "https://github.com/HugoGustavo/article-automated-test-generation-with-llms"
 keywords:
